@@ -5,7 +5,7 @@ runScript("../platform/cmd-run", 'firefox')
 runScript("../platform/firefox-container-open", '1')
 
 # twitter 
-# TODO
+runScript("../platform/twitter-open")
 # twitter like
 # TODO
 # twitter retweet
@@ -14,4 +14,4 @@ runScript("../platform/firefox-container-open", '1')
 # TODO
 
 # stop browser
-runScript("../platform/window-close.sikuli")
+#runScript("../platform/window-close.sikuli")
