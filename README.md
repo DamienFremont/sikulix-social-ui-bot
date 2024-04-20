@@ -29,6 +29,8 @@
 
 ## Screenshots
 
+![alt text](./docs/README/screenshot.gif)
+
 ![alt text](./docs/README/screenshot-1.png)
 
 ## Features
@@ -45,17 +47,13 @@
 - Firefox
   - [x] app: start, stop
   - [x] container: open
-  
-- OS
-  - []
-  - [x] cmd: run
 
 Repository layout:
 ```
 ├── docs
 ├── platform
-│   ├── cmd...
 │   └── firefox...
+│   └── twitter...
 ├── standalone
 │   ├── twitter-bot
 └── tools
