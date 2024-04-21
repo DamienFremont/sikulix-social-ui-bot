@@ -1,19 +1,19 @@
 import random
 
-# start browser
+ARG_SEARCH = "#gaming"
+ARG_BOTS = ["3", "4", "5", "6", "7", "8", "9", "0"]
+
+# browser
 runScript("../platform/cmd-run", 'firefox')
 
-#containers = ["0"]
-#containers = ["0", "11", "10", "2,", "3", "4", "5", "6", "7", "8", "9"]
-c_all = ["1", "12", "11", "3", "4", "5", "6", "7", "8", "9", "0"]
-c_like = c_all
-c_bots = ["3"]
-
 # account activity
-for i in c_bots:
-    # open container
+for i in ARG_BOTS:
+    
+    # browser
     runScript("../platform/firefox-container-open", i)
     runScript("../platform/firefox-mobile")
+
+    # twitter
     runScript("../platform/twitter-open")
     # like tw from home
 #    runScript("../platform/twitter-click-home")
@@ -27,7 +27,7 @@ for i in c_bots:
 #            type(Key.PAGE_DOWN)
 #        sleep(1)
     # rt  and like from search
-    runScript("../platform/twitter-search", "#gaming")
+    runScript("../platform/twitter-search", ARG_SEARCH)
     random_like = random.randint(1, 3);    
     for x in range(random_like):    
         runScript("../platform/twitter-like")        
