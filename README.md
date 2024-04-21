@@ -33,17 +33,20 @@
 
 ![alt text](./docs/README/screenshot-1.png)
 
+![alt text](./docs/README/screenshot-2.png)
+
 ## Features
 
 - Targets:
   - [x] Win64 (Windows)
 - Twitter
-  - [ ] site: open, close
-  - [ ] favtweet.py
-  - [ ] retweetuser.py
-  - [ ] tweetfile.py
+  - [x] site: open, close
+  - [x] favtweet.py
+  - [x] retweetuser.py
   - [ ] followback.py
-  - [ ] followfriendsof.py	
+  - [ ] followfriendsof.py
+  - [ ] tweetfile.py
+  - [ ] tweet_saturdayscreenshot.py
 - Firefox
   - [x] app: start, stop
   - [x] container: open
@@ -99,7 +102,11 @@ TODO
 
 ![alt text](./docs/README/sikulix-usage.png)
 
+- stop a running script with: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd>
+
 ## Resources
 
 - Sikulix
   - [SikuliX](http://sikulix.com/)
+  - [Keys](https://sikulix-2014.readthedocs.io/en/latest/keys.html)
+  - [Running Scripts](https://sikulix.github.io/docs/scripts/running-scripts/)
