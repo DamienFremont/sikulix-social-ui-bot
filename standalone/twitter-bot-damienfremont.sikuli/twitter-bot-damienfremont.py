@@ -1,7 +1,7 @@
 import random
 
 ARG_SEARCH = "#gaming"
-ARG_BOTS = ["3", "4", "5", "6", "7", "8", "9", "0"]
+ARG_BOTS = ["3", "4", "5", "6", "7", "8", "9"]
 
 # browser
 runScript("../platform/cmd-run", 'firefox')
@@ -50,7 +50,7 @@ for i in c_all:
     sleep(1)
     #runScript("../platform/twitter-open")
     #runScript("../platform/firefox-focus-addressbar")
-    type("https://twitter.com/FremontGames/status/1781653039851450536")
+    type("https://x.com/FremontGames/status/1781653039851450536")
     type(Key.ENTER)
     sleep(2)
 
