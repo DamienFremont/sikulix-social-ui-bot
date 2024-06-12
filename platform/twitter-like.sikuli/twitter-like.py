@@ -1,13 +1,13 @@
-if exists("1683902552913.png"):
-    click("1683902552913.png")
+if exists("20240612_095753-screenshot.png"):
+    click("20240612_095753-screenshot.png")
     sleep(1)    
     
     # SUCCESS
-    if exists("1683902610260.png"):
+    if exists("20240612_100024-screenshot.png"):
         do_nothing = 1
         
     # ERROR: missclick comment, back
-    elif exists("20240420_183320-screenshot.png"):
+    elif exists("20240612_095936-screenshot.png"):
         keyDown(Key.ALT)
         keyDown(Key.LEFT)
         keyUp(Key.ALT)
