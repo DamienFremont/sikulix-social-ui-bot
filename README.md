@@ -96,13 +96,13 @@ TODO
 ### SikuliX IDE
 
 - Start `SikuliX IDE`
-- SikuliX:
+- Run (SikuliX):
   - Menu > "File" > "Open" > `C:/...git/sikulix-twitter-bot/plateform/bot-twitter`
   - click "Run"
 
 ![alt text](./docs/README/sikulix-usage.png)
 
-- stop a running script with: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd>
+- Stop a running script with: <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>
 
 ## Resources
 

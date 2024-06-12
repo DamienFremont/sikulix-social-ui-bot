@@ -1,3 +1,5 @@
+# NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
+
 import random
 
 ARG_SEARCH = "#gaming"
