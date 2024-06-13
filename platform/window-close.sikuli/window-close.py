@@ -1,7 +1,9 @@
-sleep(1)
+# type(Key.F4, KEY_ALT)
 
-keyDown(Key.ALT)
-keyDown(Key.F4)
-
-keyUp(Key.ALT)
-keyUp(Key.F4)
+try:
+   # some code that may fail   
+   keyDown(Key.ALT)
+   keyDown(Key.F4)
+finally:
+   # this is done in all cases
+   keyUp()

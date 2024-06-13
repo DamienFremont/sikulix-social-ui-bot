@@ -8,9 +8,13 @@ if exists("20240612_095753-screenshot.png"):
         
     # ERROR: missclick comment, back
     elif exists("20240612_095936-screenshot.png"):
-        keyDown(Key.ALT)
-        keyDown(Key.LEFT)
-        keyUp(Key.ALT)
-        keyUp(Key.LEFT)
+        # firefox-nav-back:
+        try:
+            # some code that may fail   
+            keyDown(Key.ALT)
+            keyDown(Key.LEFT)
+        finally:
+           # this is done in all cases
+           keyUp()
         
     sleep(1)
