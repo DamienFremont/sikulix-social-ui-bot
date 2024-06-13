@@ -1,6 +1,8 @@
 
 # start twitter
-type("https://x.com/" + Key.ENTER)
+paste("https://x.com/")
+type(Key.ENTER)
+
 wait("1683900184529.png")
 
 # accept

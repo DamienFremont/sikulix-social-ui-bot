@@ -16,7 +16,8 @@ keyUp(Key.WIN)
 keyUp("r")
 
 # run cmd
-type(arg1 + Key.ENTER)
+paste(arg1)
+type(Key.ENTER)
 
 # wait
 sleep(1)

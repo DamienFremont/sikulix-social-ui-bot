@@ -21,8 +21,9 @@ for i in ARG_BOTS:
     # like and repost
     
     runScript("../platform/firefox-focus-addressbar")
-    type(ARG_TWEET)
+    paste(ARG_TWEET)
     type(Key.ENTER)
+    
     sleep(2)
      
     runScript("../platform/twitter-like")        
