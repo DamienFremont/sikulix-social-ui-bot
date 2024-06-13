@@ -43,13 +43,15 @@
   - [x] site: open, close
   - [x] favtweet.py
   - [x] retweetuser.py
-  - [ ] followback.py
+  - [x] followback.py
   - [ ] followfriendsof.py
   - [ ] tweetfile.py
   - [ ] tweet_saturdayscreenshot.py
 - Firefox
   - [x] app: start, stop
   - [x] container: open
+  - [ ] gesture: swipe
+  - [ ] display: mobile
 
 Repository layout:
 ```
