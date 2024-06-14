@@ -51,7 +51,7 @@
   - [x] app: start, stop
   - [x] container: open
   - [ ] gesture: swipe
-  - [ ] display: mobile
+  - [ ] display: device fixed, zoom fixed, fullscreen
 
 Repository layout:
 ```
