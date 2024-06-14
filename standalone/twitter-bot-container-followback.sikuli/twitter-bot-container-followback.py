@@ -10,7 +10,9 @@ runScript("../platform/cmd-run", 'firefox')
 
 # account activity
 for i in ARG_BOTS:
-    try:    
+    try:
+        # start ***********************************************
+        
         # browser
         runScript("../platform/firefox-container-open", i)
     
@@ -33,8 +35,13 @@ for i in ARG_BOTS:
         for x in range(random_like):
             sleep(1)
             click("20240613_152525-screenshot.png")
+            
+        # end *********************************************** 
+        runScript("../platform/windows-takescreenshot", "-success") 
     except FindFailed:
-        keyUp()
+        runScript("../platform/windows-takescreenshot", "-error")
     finally:
         keyUp()
-        
+
+# browser
+#runScript("../platform/window-close.sikuli")
