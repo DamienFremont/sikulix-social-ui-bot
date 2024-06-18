@@ -1,5 +1,5 @@
-if exists("20240612_095753-screenshot.png"):
-    click("20240612_095753-screenshot.png")
+if exists("20240618_144336-screenshot.png"):
+    click("20240618_144336-screenshot.png")
     sleep(1)    
     
     # SUCCESS
