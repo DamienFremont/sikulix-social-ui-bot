@@ -2,7 +2,7 @@
 
 import random
 
-ARG_TWEET ="https://x.com/FremontGames/status/1800508167400640528"
+ARG_TWEET ="https://x.com/FremontGames/status/1803029111821971493"
 ARG_BOTS = ["3", "4", "5", "6", "7", "8", "9"]
 
 # browser
@@ -28,7 +28,7 @@ for i in ARG_BOTS:
         sleep(2)
          
         runScript("../platform/twitter-like")        
-        runScript("../platform/twitter-repost")
+#        runScript("../platform/twitter-repost")
 
         # end ***********************************************
         runScript("../platform/windows-takescreenshot", "-success") 
