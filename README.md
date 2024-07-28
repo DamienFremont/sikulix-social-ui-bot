@@ -6,7 +6,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/Damien_Fremont?style=social)](https://x.com/Damien_Fremont)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-2024's advanced Twitter Bot using Sikulix-IDE and web-browser UI (ex: Firefox).
+2024's advanced Twitter/X, Facebook, Instagram Bot using Sikulix-IDE and web-browser UI (ex: Firefox).
 
 ![alt text](./docs/README/thumb.png)
 
