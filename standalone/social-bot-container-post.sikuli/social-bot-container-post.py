@@ -28,8 +28,12 @@ try:
     runScript("../platform/instagram-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
     
     # facebook
-    # TODO
-
+    runScript("../platform/firefox-container-open", ARG_FFC_ID)
+    runScript("../platform/firefox-mobile")
+    runScript("../platform/facebook-open")
+    runScript("../platform/firefox-clipboard-picture", ARG_IMG)
+    runScript("../platform/facebook-post", ARG_TXT, "true")
+    
     # tumblr
     # TODO
 
