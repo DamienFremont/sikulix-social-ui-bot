@@ -45,7 +45,11 @@ try:
     # TODO
 
     # mastodon
-    # TODO
+    runScript("../platform/firefox-container-open", ARG_FFC_ID)
+    runScript("../platform/firefox-mobile")
+    runScript("../platform/mastodon-open")
+    runScript("../platform/firefox-clipboard-picture", ARG_IMG)
+    runScript("../platform/mastodon-post", ARG_TXT, "true")
 
     # cara
     # TODO
