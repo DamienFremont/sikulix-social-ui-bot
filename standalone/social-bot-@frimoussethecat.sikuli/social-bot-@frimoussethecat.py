@@ -55,10 +55,12 @@ try:
     # TODO
 
     # threads
-    # TODO
-
+    runScript("../platform/firefox-container-open", ARG_FFC_ID)
+    runScript("../platform/firefox-mobile")
+    runScript("../platform/threads-open")
+    runScript("../platform/firefox-clipboard-picture", ARG_IMG)
+    runScript("../platform/threads-post", ARG_TXT, "true")
     
-
     # end ***********************************************  
     runScript("../platform/windows-takescreenshot", "-success") 
 except FindFailed:
