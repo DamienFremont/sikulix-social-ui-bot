@@ -35,7 +35,11 @@ try:
     runScript("../platform/facebook-post", ARG_TXT, "true")
     
     # tumblr
-    # TODO
+    runScript("../platform/firefox-container-open", ARG_FFC_ID)
+    runScript("../platform/firefox-mobile")
+    runScript("../platform/tumblr-open")
+    runScript("../platform/firefox-clipboard-picture", ARG_IMG)
+    runScript("../platform/tumblr-post", ARG_TXT, "true")
 
     # flickr
     # TODO

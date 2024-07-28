@@ -23,13 +23,13 @@ if exists("tw-post-button.png"):
         sleep(1)
 
 
-    # post
+    # submit
     click("tw-post-submit-btn.png")
     
     # SUCCESS
-
-                
-    # ERROR: already reposted, cancel
-
+    # TODO
     
+    # ERROR: already reposted, cancel
+    # TODO
+
     sleep(1)

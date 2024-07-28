@@ -9,7 +9,6 @@ if len(sys.argv) > 1:
     arg2_clip = sys.argv[2]
 
 # post
-
 click("fb-post-create.png")
 sleep(2)
 

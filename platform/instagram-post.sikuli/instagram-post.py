@@ -36,11 +36,13 @@ type(Key.TAB)
 type(Key.TAB)
 type(arg1_text)
 
-# post
+# submit
 click("insta-post-submit.png")
 
 # SUCCESS
-         
+# TODO
+
 # ERROR: already reposted, cancel
+# TODO
 
 sleep(1)
