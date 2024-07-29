@@ -31,7 +31,9 @@
 
 ![alt text](./docs/README/screenshot.gif)
 
-![alt text](./docs/README/diagram.png)
+![alt text](./docs/README/diagram-1.png)
+
+![alt text](./docs/README/diagram-2.png)
 
 ![alt text](./docs/README/screenshot-1.png)
 
@@ -40,20 +42,22 @@
 ## Features
 
 - Targets:
-  - [x] Win64 (Windows)
-- Twitter
-  - [x] site: open, close
-  - [x] favtweet.py
-  - [x] retweetuser.py
-  - [x] followback.py
-  - [ ] followfriendsof.py
-  - [ ] tweetfile.py
-  - [ ] tweet_saturdayscreenshot.py
-- Firefox
-  - [x] app: start, stop
+  - [x] Win64 (Windows 10)
+- Social Platforms:
+  - [x] Instagram: post pic
+  - [x] Twitter: post pic, fav, rt, follow
+  - [x] Facebook: post pic
+  - [x] Mastodon: post pic
+  - [x] Cara: post pic
+  - [x] Threads: post pic
+  - [x] Tumblr: post pic
+  - [x] Flickr: post pic
+  - [ ] Youtube: post vid
+  - [ ] TikTok: post vid
+- Firefox Browser
+  - [x] display: mobile view (device fixed, zoom fixed, fullscreen)
+  - [x] file: upload, copy image
   - [x] container: open
-  - [ ] gesture: swipe
-  - [ ] display: device fixed, zoom fixed, fullscreen
 
 Repository layout:
 ```
