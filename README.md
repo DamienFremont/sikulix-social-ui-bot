@@ -31,6 +31,8 @@
 
 ![alt text](./docs/README/screenshot.gif)
 
+![alt text](./docs/README/diagram.png)
+
 ![alt text](./docs/README/screenshot-1.png)
 
 ![alt text](./docs/README/screenshot-2.png)
