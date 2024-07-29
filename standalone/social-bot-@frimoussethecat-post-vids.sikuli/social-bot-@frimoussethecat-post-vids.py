@@ -20,11 +20,10 @@ try:
     runScript("../platform/youtube-post-vid", ARG_TITLE, ARG_IMG_DIR, ARG_IMG_NAM)
     
     # twitter
-    #runScript("../platform/firefox-container-open", ARG_FFC_ID)
-    #runScript("../platform/firefox-mobile")
-    #runScript("../platform/twitter-open")
-    #runScript("../platform/firefox-clipboard-picture", ARG_IMG)
-    #runScript("../platform/twitter-post-vid", ARG_TITLE, ARG_IMG_DIR, ARG_IMG_NAM)
+    runScript("../platform/firefox-container-open", ARG_FFC_ID)
+    runScript("../platform/firefox-mobile")
+    runScript("../platform/twitter-open")
+    runScript("../platform/twitter-post-vid", ARG_TITLE, ARG_IMG_DIR, ARG_IMG_NAM)
         
     # facebook
     runScript("../platform/firefox-container-open", ARG_FFC_ID)
