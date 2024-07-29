@@ -1,12 +1,12 @@
 :warning: WORK IN PROGRESS
 ==========================
 
-# SikuliX IDE - Twitter Bot
+# SikuliX IDE - Social UI Bot - NO API !!!
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/Damien_Fremont?style=social)](https://x.com/Damien_Fremont)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-2024's advanced Twitter/X, Facebook, Instagram Bot using Sikulix-IDE and web-browser UI (ex: Firefox).
+2024's social networks bot. Does NOT use APIs but OS UI instead. Works on TW/X, FB, Instagram using Sikulix-IDE and web-browser UI (Firefox).
 
 ![alt text](./docs/README/thumb.png)
 
@@ -31,9 +31,13 @@
 
 ![alt text](./docs/README/screenshot.gif)
 
-![alt text](./docs/README/diagram-1.png)
+![alt text](./docs/README/diagram/Diapositive1.PNG)
 
-![alt text](./docs/README/diagram-2.png)
+![alt text](./docs/README/diagram/Diapositive2.PNG)
+
+![alt text](./docs/README/diagram/Diapositive3.PNG)
+
+![alt text](./docs/README/diagram/Diapositive4.PNG)
 
 ![alt text](./docs/README/screenshot-1.png)
 
@@ -46,16 +50,17 @@
 - Social Platforms:
   - [x] Instagram: post pic
   - [x] Twitter: post pic, fav, rt, follow
-  - [x] Facebook: post pic
+  - [x] Facebook: post pic, post vid
   - [x] Mastodon: post pic
   - [x] Cara: post pic
   - [x] Threads: post pic
   - [x] Tumblr: post pic
   - [x] Flickr: post pic
-  - [ ] Youtube: post vid
+  - [x] Youtube: post vid
   - [ ] TikTok: post vid
+  - [ ] Vimeo: post vid
 - Firefox Browser
-  - [x] display: mobile view (device fixed, zoom fixed, fullscreen)
+  - [x] display: mobile view (resolution, zoom fixed)
   - [x] file: upload, copy image
   - [x] container: open
 
