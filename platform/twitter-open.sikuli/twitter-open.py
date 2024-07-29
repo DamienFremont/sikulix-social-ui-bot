@@ -1,3 +1,4 @@
+type("l", KeyModifier.CTRL)
 
 # start twitter
 paste("https://x.com/")
