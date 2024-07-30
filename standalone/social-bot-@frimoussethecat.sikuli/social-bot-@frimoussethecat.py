@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20210116_105519"
+ARG_POST_ID = "20210119_140852"
 ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat @frimoussethecat (o.o)"
 ARG_IMG_DIR = "file://///192.168.8.2/workdir/project-frimousse-social"
 ARG_IMG_NAM = ARG_POST_ID + "-compressed.jpg"
@@ -16,7 +16,7 @@ try:
     
     # twitter
     runScript("../platform/firefox-container-open", ARG_FFC_ID)
-    runScript("../platform/firefox-mobile")
+#    runScript("../platform/firefox-mobile")
     runScript("../platform/twitter-open")
     runScript("../platform/firefox-clipboard-picture", ARG_IMG)
     runScript("../platform/twitter-post", ARG_TXT, "true")
@@ -61,7 +61,7 @@ try:
 
     # threads
     runScript("../platform/firefox-container-open", ARG_FFC_ID)
-    runScript("../platform/firefox-mobile")
+#    runScript("../platform/firefox-mobile")
     runScript("../platform/threads-open")
     runScript("../platform/firefox-clipboard-picture", ARG_IMG)
     runScript("../platform/threads-post", ARG_TXT, "true")

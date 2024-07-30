@@ -18,7 +18,7 @@ type(arg1_text)
 # add pict
 if arg2_clip.lower() == "true":
     type("v", KeyModifier.CTRL)
-    sleep(5)
+    sleep(10)
 
 # submit
 type(Key.TAB)

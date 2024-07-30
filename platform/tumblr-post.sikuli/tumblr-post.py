@@ -1,6 +1,6 @@
 import sys.argv
 
-arg1_text = "20210112_233929 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "20210119_140852 #pet #cat #tabbycat @frimoussethecat (o.o)"
 arg2_clip = "true"
 
 # parameters
@@ -18,10 +18,15 @@ type(arg1_text)
 # add pict
 if arg2_clip.lower() == "true":
     type("v", KeyModifier.CTRL)
-    sleep(5)
+    sleep(10)
 
 # submit
-click("tumblr-post-submit-2.png")
+type(Key.TAB)
+type(Key.TAB)
+type(Key.TAB)
+type(Key.TAB)
+type(Key.ENTER)
+#click("tumblr-post-submit-2.png")
 
 # SUCCESS
 # TODO
