@@ -17,7 +17,7 @@ sleep(2)
 # add text
 type(arg1_text)
 
-# add pict
+# add vid
 click("fb-post-upload.png")
 sleep(1)
 

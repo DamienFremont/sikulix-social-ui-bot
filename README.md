@@ -49,15 +49,15 @@
   - [x] Win64 (Windows 10)
 - Social Platforms:
   - [x] Instagram: post pic
-  - [x] Twitter: post pic, fav, rt, follow
+  - [x] Twitter: post pic, post vid, fav, rt, follow
   - [x] Facebook: post pic, post vid
   - [x] Mastodon: post pic
   - [x] Cara: post pic
   - [x] Threads: post pic
   - [x] Tumblr: post pic
   - [x] Flickr: post pic
-  - [x] Youtube: post vid
-  - [ ] TikTok: post vid
+  - [x] Youtube: post vid, post short
+  - [ ] TikTok: post short
   - [ ] Vimeo: post vid
 - Firefox Browser
   - [x] display: mobile view (resolution, zoom fixed)

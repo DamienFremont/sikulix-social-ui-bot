@@ -43,7 +43,7 @@ click("youtube-post-select-public.png")
 #sleep(1)
 
 # submit
-#click("youtube-post-submit.png")
+# TODO click("youtube-post-submit.png")
 
 # SUCCESS
 # TODO
