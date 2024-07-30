@@ -8,6 +8,9 @@ if len(sys.argv) > 1:
     arg1_img_dir = sys.argv[1]
     arg2_img_fn = sys.argv[2]
 
+# wait popup
+wait("firefox-file-upload-popup.png")
+
 # find folder
 type("l", KeyModifier.CTRL)
 paste(arg1_img_dir)
