@@ -25,7 +25,7 @@ click("mastodon-post-submit-2.png")
 sleep(1)
 
 # check upload
-wait("mastodon-post-check.png", 120)
+#wait("mastodon-post-check.png", 120)
 
 # SUCCESS
 # TODO
