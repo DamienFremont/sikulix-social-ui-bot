@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20210119_140852"
+ARG_POST_ID = "20210129_195844"
 ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat @frimoussethecat (o.o)"
 ARG_IMG_DIR = "file://///192.168.8.2/workdir/project-frimousse-social"
 ARG_IMG_NAM = ARG_POST_ID + "-compressed.jpg"
@@ -23,20 +23,20 @@ try:
      
     # instagram
     runScript("../platform/firefox-container-open", ARG_FFC_ID)
-    runScript("../platform/firefox-mobile")
+#    runScript("../platform/firefox-mobile")
     runScript("../platform/instagram-open")
     runScript("../platform/instagram-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
     
     # facebook
     runScript("../platform/firefox-container-open", ARG_FFC_ID)
-    runScript("../platform/firefox-mobile")
+#    runScript("../platform/firefox-mobile")
     runScript("../platform/facebook-open")
     runScript("../platform/firefox-clipboard-picture", ARG_IMG)
     runScript("../platform/facebook-post", ARG_TXT, "true")
     
     # tumblr
     runScript("../platform/firefox-container-open", ARG_FFC_ID)
-    runScript("../platform/firefox-mobile")
+#    runScript("../platform/firefox-mobile")
     runScript("../platform/tumblr-open")
     runScript("../platform/firefox-clipboard-picture", ARG_IMG)
     runScript("../platform/tumblr-post", ARG_TXT, "true")
@@ -48,14 +48,14 @@ try:
 
     # mastodon
     runScript("../platform/firefox-container-open", ARG_FFC_ID)
-    runScript("../platform/firefox-mobile")
+#    runScript("../platform/firefox-mobile")
     runScript("../platform/mastodon-open")
     runScript("../platform/firefox-clipboard-picture", ARG_IMG)
     runScript("../platform/mastodon-post", ARG_TXT, "true")
 
     # cara
     runScript("../platform/firefox-container-open", ARG_FFC_ID)
-    runScript("../platform/firefox-mobile")
+#    runScript("../platform/firefox-mobile")
     runScript("../platform/cara-open")
     runScript("../platform/cara-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
 
