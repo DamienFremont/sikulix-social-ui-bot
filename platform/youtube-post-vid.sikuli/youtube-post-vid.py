@@ -24,12 +24,19 @@ sleep(1)
 runScript("firefox-file-upload", arg2_img_dir, arg3_img_fn)
 sleep(2)
 
-# type text
+# type title
 wait("youtube-post-next.png")
 type("a", KeyModifier.CTRL)
 sleep(1)
 type(arg1_text)
+sleep(1)
 
+# type desc
+type(Key.TAB)
+type(Key.TAB)
+type(arg1_text)
+sleep(1)
+        
 # next...
 click("youtube-post-next.png")
 sleep(1)

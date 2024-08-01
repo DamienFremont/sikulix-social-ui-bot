@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_title = "20210117_205357 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_title = "20210202_171937 #pet #cat #tabbycat @frimoussethecat (o.o)"
 arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20210117_205357-x265_new.mp4"
+arg3_img_fn ="20210202_171937-x265_new.mp4"
 
 # parameters
 if len(sys.argv) > 1:
@@ -15,7 +15,7 @@ click("fb-post-create.png")
 sleep(2)
 
 # add text
-type(arg1_text)
+type(arg1_title)
 
 # add vid
 click("fb-post-upload.png")

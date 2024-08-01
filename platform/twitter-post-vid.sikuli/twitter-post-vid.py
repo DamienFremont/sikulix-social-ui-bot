@@ -16,7 +16,7 @@ sleep(1)
 
 # add text
 ## type text
-type(arg1_text)
+type(arg1_title)
 
 # add vid
 click("tw-post-vid.png")
