@@ -1,6 +1,6 @@
 import sys.argv
 
-arg1_text = "20210123_000517 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "20210222_181334 #pet #cat #tabbycat @frimoussethecat (o.o)"
 arg2_clip = "true"
 
 # parameters
@@ -17,9 +17,10 @@ type(arg1_text)
 # add pict
 if arg2_clip.lower() == "true":
     type("v", KeyModifier.CTRL)
-    sleep(3)
+    sleep(2)
     wait("mastodon-post-submit-2.png", 120)
-
+    sleep(2)
+ 
 # submit
 click("mastodon-post-submit-2.png")
 sleep(1)
