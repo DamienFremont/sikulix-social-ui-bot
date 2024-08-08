@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20210122_170959"
+ARG_POST_ID = "20210223_204831"
 ARG_TITLE = ARG_POST_ID + " #pet #cat #tabbycat @frimoussethecat (o.o)"
 ARG_IMG_DIR = "file://///192.168.8.2/workdir/project-frimousse-social"
 ARG_IMG_NAM = ARG_POST_ID + "-x265_new.mp4"
@@ -30,6 +30,8 @@ try:
 #    runScript("../platform/firefox-mobile")
     runScript("../platform/facebook-open")
     runScript("../platform/facebook-post-vid", ARG_TITLE, ARG_IMG_DIR, ARG_IMG_NAM)
+
+    # TODO: mastodon
 
     # vimeo
     runScript("../platform/firefox-container-open", ARG_FFC_ID)

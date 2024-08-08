@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20210122_170959 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "20210223_204831 #pet #cat #tabbycat @frimoussethecat (o.o)"
 arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20210122_170959-x265_new.mp4"
+arg3_img_fn ="20210223_204831-x265_new.mp4"
 
 # parameters
 if len(sys.argv) > 1:
@@ -10,6 +10,8 @@ if len(sys.argv) > 1:
     arg2_img_dir = sys.argv[2]
     arg3_img_fn = sys.argv[3]
     
+wait("vimeo-post-create.png", 60)
+
 # post
 click("vimeo-post-create.png")
 sleep(1)
