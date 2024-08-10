@@ -14,7 +14,7 @@ for i in ARG_BOTS:
         # start ***********************************************
         
         # browser
-        runScript("../platform/firefox-container-open", i)
+        runScript("../platform/firefox-container-new", i)
         runScript("../platform/firefox-mobile")
     
         # twitter
@@ -49,7 +49,7 @@ for i in ARG_BOTS:
         
         #for i in c_all:
             # open container
-            #runScript("../platform/firefox-container-open", i)
+            #runScript("../platform/firefox-container-new", i)
             # twitter 
             #sleep(1)
             #runScript("../platform/twitter-open")

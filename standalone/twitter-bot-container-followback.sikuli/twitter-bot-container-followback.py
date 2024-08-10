@@ -14,7 +14,7 @@ for i in ARG_BOTS:
         # start ***********************************************
         
         # browser
-        runScript("../platform/firefox-container-open", i)
+        runScript("../platform/firefox-container-new", i)
     
         # twitter
         runScript("../platform/twitter-open")
