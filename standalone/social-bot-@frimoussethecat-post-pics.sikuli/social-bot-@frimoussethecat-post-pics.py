@@ -1,8 +1,8 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20210312_205929"
-ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat @frimoussethecat (o.o)"
+ARG_POST_ID = "20210321_150710"
+ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #monteal #canada @frimoussethecat (o.o)"
 ARG_IMG_DIR = "file://///192.168.8.2/workdir/project-frimousse-social"
 ARG_IMG_NAM = ARG_POST_ID + "-compressed.jpg"
 ARG_IMG = ARG_IMG_DIR + "/" + ARG_IMG_NAM
@@ -10,6 +10,8 @@ ARG_FFC_ID = "4"
 
 try:
     # start ***********************************************
+
+    # POST ************************************************
     
     # browser
     runScript("../platform/cmd-run", 'firefox')
@@ -65,6 +67,33 @@ try:
     runScript("../platform/threads-open")
     runScript("../platform/firefox-clipboard-picture", ARG_IMG)
     runScript("../platform/threads-post", ARG_TXT, "true")
+
+    # CHECK ************************************************
+    
+    # instagram
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.instagram.com/frimousse_the_cat/")
+    # twitter
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
+    # facebook
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.facebook.com/frimoussethecat/")
+    # mastodon
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://mastodon.social/@frimoussethecat")
+    # cara
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://cara.app/frimoussethecat")
+    # threads
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.threads.net/@frimousse_the_cat")
+    # tumblr
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.tumblr.com/frimoussethecat")
+    # flickr
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.flickr.com/photos/frimoussethecat/")
     
     # end ***********************************************  
     runScript("../platform/windows-takescreenshot", "-success") 
