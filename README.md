@@ -1,6 +1,3 @@
-:warning: WORK IN PROGRESS
-==========================
-
 # SikuliX IDE - Social UI Bot - NO API !!!
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/Damien_Fremont?style=social)](https://x.com/Damien_Fremont)
