@@ -69,6 +69,9 @@ try:
     runScript("../platform/threads-post", ARG_TXT, "true")
 
     # CHECK ************************************************
+
+    # "delimiter"
+    runScript("../platform/firefox-tab-new")
     
     # instagram
     runScript("../platform/firefox-container-new", ARG_FFC_ID)

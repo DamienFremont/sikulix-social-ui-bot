@@ -1,6 +1,6 @@
 import sys.argv
 
-arg1_text = "20210119_140852 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "TEST #pet #cat #tabbycat @frimoussethecat (o.o)"
 arg2_clip = "true"
 
 # parameters
@@ -27,6 +27,11 @@ type(Key.TAB)
 type(Key.TAB)
 type(Key.ENTER)
 #click("tumblr-post-submit-2.png")
+
+#confirm
+sleep(2)
+if exists("tumblr-post-confirm-tags1.png"):
+    click("tumblr-post-confirm-tags2.png")
 
 # SUCCESS
 # TODO
