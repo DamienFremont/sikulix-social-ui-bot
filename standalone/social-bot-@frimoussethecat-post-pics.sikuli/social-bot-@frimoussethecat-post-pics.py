@@ -1,9 +1,9 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20210321_150710"
-ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #monteal #canada @frimoussethecat (o.o)"
-ARG_IMG_DIR = "file://///192.168.8.2/workdir/project-frimousse-social"
+ARG_POST_ID = "20210622_180936"
+ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #montreal #canada @frimoussethecat (o.o)"
+ARG_IMG_DIR = "file:c:/workdir/project-frimousse-social"
 ARG_IMG_NAM = ARG_POST_ID + "-compressed.jpg"
 ARG_IMG = ARG_IMG_DIR + "/" + ARG_IMG_NAM
 ARG_FFC_ID = "4"
