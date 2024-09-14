@@ -64,8 +64,7 @@ try:
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
 #    runScript("../platform/firefox-mobile")
     runScript("../platform/threads-open")
-    runScript("../platform/firefox-clipboard-picture", ARG_IMG)
-    runScript("../platform/threads-post", ARG_TXT, "true")
+    runScript("../platform/threads-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
 
     # CHECK ************************************************
 
