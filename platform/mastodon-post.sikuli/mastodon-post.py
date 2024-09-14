@@ -14,7 +14,7 @@ if len(sys.argv) > 1:
 click("mastodon-post-create.png")
 
 # add text
-type(arg1_text)
+paste(arg1_text)
 
 # upload picutre
 click("mastodon-post-upload.png")
@@ -22,11 +22,18 @@ sleep(1)
 
 # select picture
 runScript("firefox-file-upload", arg2_img_dir, arg3_img_fn)
-sleep(1)
+sleep(2)
 
-# FIXME: not diff between loading and loaded post buttons
+# uploaded
 wait("mastodon-post-uploading.png", 10)
+# wait_notexists(...)
+timeout = 30
+time_cnt = 0
 while(True):
+    time_cnt = time_cnt + 1
+    if time_cnt > timeout:
+        Debug.error('wait_notexists() timeout: ' + str(timeout))
+        break
     if exists("mastodon-post-uploading.png"):
         wait(1)
     else:
@@ -34,7 +41,7 @@ while(True):
 
 # submit
 click("mastodon-post-submit-2.png")
-sleep(1)
+
 
 # check upload
 #wait("mastodon-post-check.png", 120)
