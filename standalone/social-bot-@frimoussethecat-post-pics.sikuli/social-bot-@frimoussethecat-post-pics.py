@@ -1,9 +1,9 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20211220_005455"
+ARG_POST_ID = "20211220_005500"
 ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #montreal #canada @frimoussethecat (o.o)"
-ARG_IMG_DIR = "file:c:/workdir/project-frimousse-social"
+ARG_IMG_DIR = "file:c:/workdir/project-frimousse-social/"
 ARG_IMG_NAM = ARG_POST_ID + "-compressed.jpg"
 ARG_IMG = ARG_IMG_DIR + "/" + ARG_IMG_NAM
 ARG_FFC_ID = "4"
@@ -40,8 +40,7 @@ try:
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
 #    runScript("../platform/firefox-mobile")
     runScript("../platform/tumblr-open")
-    runScript("../platform/firefox-clipboard-picture", ARG_IMG)
-    runScript("../platform/tumblr-post", ARG_TXT, "true")
+    runScript("../platform/tumblr-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
 
     # flickr
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
@@ -60,6 +59,9 @@ try:
     runScript("../platform/cara-open")
     runScript("../platform/cara-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
 
+    # FIXME next: empty tab 
+    sleep(5)
+    
     # threads
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
 #    runScript("../platform/firefox-mobile")
