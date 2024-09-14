@@ -1,7 +1,7 @@
 import sys.argv
 
 arg1_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg2_img_fn ="20210112_233929-compressed.jpg"
+arg2_img_fn ="20211220_005455-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -11,23 +11,39 @@ if len(sys.argv) > 1:
 # wait popup
 wait("firefox-file-upload-popup.png")
 
-# find folder
+# focus path
 type("l", KeyModifier.CTRL)
-paste(arg1_img_dir)
+
+# focus filename
+type(Key.TAB, KEY_SHIFT)
+type(Key.TAB, KEY_SHIFT)
+type(Key.TAB, KEY_SHIFT)
+type(Key.TAB, KEY_SHIFT)
+type(Key.TAB, KEY_SHIFT)
+paste(arg1_img_dir + arg2_img_fn)
+
+# ok
 type(Key.ENTER)
 
-sleep(1)
+# ARCHIVE: folder then file
+
+# find folder
+#type("l", KeyModifier.CTRL)
+#paste(arg1_img_dir)
+#type(Key.ENTER)
+
+#sleep(1)
 
 # search file
-type(Key.TAB)
-paste(arg2_img_fn)
-type(Key.ENTER)
+#type(Key.TAB)
+#paste(arg2_img_fn)
+#type(Key.ENTER)
 
-sleep(1)
+#sleep(1)
 
 # select file
-type(Key.TAB)
-type(Key.TAB)
-type(Key.TAB)
-type(Key.RIGHT)
-type(Key.ENTER)
+#type(Key.TAB)
+#type(Key.TAB)
+#type(Key.TAB)
+#type(Key.RIGHT)
+#type(Key.ENTER)
