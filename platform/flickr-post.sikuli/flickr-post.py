@@ -14,7 +14,7 @@ if len(sys.argv) > 1:
 click("flickr-post-create.png")
 sleep(1)
 
-# upload picutre
+# upload picture
 click("flickr-file-upload.png")
 sleep(1)
 
@@ -25,7 +25,7 @@ sleep(1)
 # type text
 click("flickr-post-desc.png")
 type(Key.TAB, KeyModifier.SHIFT)
-type(arg1_text)
+paste(arg1_text)
 
 # submit
 click("flickr-post-submit-1.png")

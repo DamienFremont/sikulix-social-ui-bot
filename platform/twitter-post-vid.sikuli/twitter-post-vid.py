@@ -24,7 +24,7 @@ sleep(1)
 
 runScript("firefox-file-upload", arg2_img_dir, arg3_img_fn)
 sleep(2)
-wait("tw-post-vid-ok.png", 120)
+#wait("tw-post-vid-ok.png", 120)
 
 # submit
 # TODO click("tw-post-submit-btn.png")

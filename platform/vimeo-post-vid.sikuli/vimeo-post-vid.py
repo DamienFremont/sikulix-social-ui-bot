@@ -18,7 +18,7 @@ sleep(1)
 click("vimeo-post-create2.png")
 sleep(5)
 
-# upload picutre
+# upload picture
 click("vimeo-post-file-upload.png")
 sleep(1)
 

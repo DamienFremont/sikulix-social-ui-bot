@@ -18,7 +18,7 @@ sleep(1)
 type(Key.TAB)
 paste(arg1_text)
 
-# upload picutre
+# upload picture
 click("cara-post-upload.png")
 sleep(1)
 

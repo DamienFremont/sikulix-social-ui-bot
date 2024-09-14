@@ -14,7 +14,7 @@ if len(sys.argv) > 1:
 click("insta-post-create-btn.png")
 sleep(1)
 
-# upload picutre
+# upload picture
 click("insta-post-upload.png")
 sleep(1)
 

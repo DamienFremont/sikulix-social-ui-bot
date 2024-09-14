@@ -16,13 +16,12 @@ click("mastodon-post-create.png")
 # add text
 paste(arg1_text)
 
-# upload picutre
+# upload picture
 click("mastodon-post-upload.png")
 sleep(1)
 
 # select picture
 runScript("firefox-file-upload", arg2_img_dir, arg3_img_fn)
-sleep(2)
 
 # uploaded
 wait("mastodon-post-uploading.png", 10)

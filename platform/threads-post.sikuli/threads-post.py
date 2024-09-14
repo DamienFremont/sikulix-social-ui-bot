@@ -16,7 +16,7 @@ click("threads-post-create-1.png")
 # add text
 paste(arg1_text)
 
-# upload picutre
+# upload picture
 click("threads-post-upload.png")
 sleep(1)
 
