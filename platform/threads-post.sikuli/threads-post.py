@@ -14,6 +14,7 @@ if len(sys.argv) > 1:
 click("threads-post-create-1.png")
 
 # add text
+sleep(1)
 paste(arg1_text)
 
 # upload picture
