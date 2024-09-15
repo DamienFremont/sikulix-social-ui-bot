@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20211220_005500"
+ARG_POST_ID = "20211221_173613"
 ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #montreal #canada @frimoussethecat (o.o)"
 ARG_IMG_DIR = "file:c:/workdir/project-frimousse-social/"
 ARG_IMG_NAM = ARG_POST_ID + "-compressed.jpg"
@@ -51,7 +51,7 @@ try:
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
 #    runScript("../platform/firefox-mobile")
     runScript("../platform/mastodon-open")
-    runScript("../platform/mastodon-post", ARG_IMG_DIR, ARG_IMG_NAM)
+    runScript("../platform/mastodon-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
 
     # cara
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
