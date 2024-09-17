@@ -30,9 +30,10 @@ try:
     # select picture
     runScript("firefox-file-upload", arg2_img_dir, arg3_img_fn)
     
-    sleep(1)
+    sleep(5)
         
     # submit
+    type(Key.TAB, KEY_SHIFT)
     type(Key.TAB, KEY_SHIFT)
     type(Key.TAB, KEY_SHIFT)
     type(Key.TAB, KEY_SHIFT)
