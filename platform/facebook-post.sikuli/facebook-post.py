@@ -1,36 +1,55 @@
 import sys.argv
 
-arg1_text = "20210112_233929 #pet #cat #tabbycat @frimoussethecat (o.o)"
-arg2_clip = "true"
+arg1_text = "20211222_004219 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
+arg3_img_fn ="20211222_004219-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
     arg1_text = sys.argv[1]
-    arg2_clip = sys.argv[2]
+    arg2_img_dir = sys.argv[2]
+    arg3_img_fn = sys.argv[3]
 
-# post
-click("fb-post-create.png")
-sleep(2)
-
-# add text
-type(arg1_text)
-
-# add pict
-if arg2_clip.lower() == "true":
-    type("v", KeyModifier.CTRL)
+try:
+    
+    # post
+    click("fb-post-create.png")
     sleep(1)
-
-# submit
-type(Key.TAB, KEY_SHIFT)
-type(Key.TAB, KEY_SHIFT)
-type(Key.TAB, KEY_SHIFT)
-type(Key.TAB, KEY_SHIFT)
-type(Key.ENTER)
-
-# SUCCESS
-# TODO
-
-# ERROR: already reposted, cancel
-# TODO
-
-sleep(1)
+    
+    wait("facebook-post-form.png")
+      
+    # add text
+    paste(arg1_text)
+    
+    # upload picture
+    type(Key.TAB)
+    type(Key.TAB)
+    type(Key.ENTER)
+    sleep(1)
+        
+    # select picture
+    runScript("firefox-file-upload", arg2_img_dir, arg3_img_fn)
+    
+    sleep(1)
+        
+    # submit
+    type(Key.TAB, KEY_SHIFT)
+    type(Key.TAB, KEY_SHIFT)
+    type(Key.TAB, KEY_SHIFT)
+    type(Key.TAB, KEY_SHIFT)
+    type(Key.TAB, KEY_SHIFT)
+    type(Key.ENTER)
+    
+    # SUCCESS
+    # TODO
+    
+    # ERROR: already reposted, cancel
+    # TODO
+    
+    sleep(1)
+    
+    runScript("../platform/windows-takescreenshot", "-facebook-success") 
+except FindFailed:
+    runScript("../platform/windows-takescreenshot", "-facebook-error")
+finally:
+    keyUp()

@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20211221_173613"
+ARG_POST_ID = "20211222_004219"
 ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #montreal #canada @frimoussethecat (o.o)"
 ARG_IMG_DIR = "file:c:/workdir/project-frimousse-social/"
 ARG_IMG_NAM = ARG_POST_ID + "-compressed.jpg"
@@ -34,7 +34,7 @@ try:
 #    runScript("../platform/firefox-mobile")
     runScript("../platform/facebook-open")
     runScript("../platform/firefox-clipboard-picture", ARG_IMG)
-    runScript("../platform/facebook-post", ARG_TXT, "true")
+    runScript("../platform/facebook-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
     
     # tumblr
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
