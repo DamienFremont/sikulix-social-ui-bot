@@ -7,28 +7,36 @@ arg2_clip = "true"
 if len(sys.argv) > 1:
     arg1_text = sys.argv[1]
     arg2_clip = sys.argv[2]
+    
+try:
 
-# post
-click("tw-post-button.png")
-sleep(1)
+    # post
+    click("tw-post-button.png")
+    sleep(1)
 
-# add text
-## type text
-type(arg1_text)
+    # add text
+    ## type text
+    type(arg1_text)
 
-# add pict
-if arg2_clip.lower() == "true":
-    type("v", KeyModifier.CTRL)
-    sleep(10)
+    # add pict
+    if arg2_clip.lower() == "true":
+        type("v", KeyModifier.CTRL)
+        sleep(10)
 
 
-# submit
-click("tw-post-submit-btn.png")
+    # submit
+    click("tw-post-submit-btn.png")
 
-# SUCCESS
-# TODO
+    # SUCCESS
+    # TODO
 
-# ERROR: already reposted, cancel
-# TODO
+    # ERROR: already reposted, cancel
+    # TODO
 
-sleep(1)
+    sleep(1)
+
+    runScript("../platform/windows-takescreenshot", "-twitter-success") 
+except FindFailed:
+    runScript("../platform/windows-takescreenshot", "-twitter-error")
+finally:
+    keyUp()
