@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20211220_005455 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "20211230_234721 #pet #cat #tabbycat @frimoussethecat (o.o)"
 arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20211220_005455-compressed.jpg"
+arg3_img_fn ="20211230_234721-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -13,7 +13,7 @@ if len(sys.argv) > 1:
 try:
     
     # post
-    click("threads-post-create-1.png", 30)
+    click("threads-post-create-2.png")
     
     # add text
     sleep(1)
@@ -37,11 +37,6 @@ try:
     
     # SUCCESS
     # TODO
-    
-    # ERROR: already reposted, cancel
-    # TODO
-    
-    sleep(1)
     
 finally:
     runScript("../platform/windows-takescreenshot", "-threads")
