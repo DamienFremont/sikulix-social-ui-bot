@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20210112_233929 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "20211231_999999 #pet #cat #tabbycat @frimoussethecat (o.o)"
 arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20210112_233929-compressed.jpg"
+arg3_img_fn ="20211231_999999-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -11,6 +11,9 @@ if len(sys.argv) > 1:
     arg3_img_fn = sys.argv[3]
 
 try:
+
+    # page loaded
+    wait("insta-post-create-btn.png", 30)
     
     # post
     click("insta-post-create-btn.png")
@@ -36,7 +39,7 @@ try:
     type(Key.TAB)
     type(Key.TAB)
     type(Key.TAB)
-    type(arg1_text)
+    paste(arg1_text)
     
     # submit
     click("insta-post-submit.png")
