@@ -49,8 +49,6 @@ try:
     
     sleep(1)
 
-    runScript("../platform/windows-takescreenshot", "-instagram-success") 
-except FindFailed:
-    runScript("../platform/windows-takescreenshot", "-instagram-error")
 finally:
+    runScript("../platform/windows-takescreenshot", "-instagram")
     keyUp()

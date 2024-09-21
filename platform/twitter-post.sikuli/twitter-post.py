@@ -35,8 +35,6 @@ try:
 
     sleep(1)
 
-    runScript("../platform/windows-takescreenshot", "-twitter-success") 
-except FindFailed:
-    runScript("../platform/windows-takescreenshot", "-twitter-error")
 finally:
+    runScript("../platform/windows-takescreenshot", "-twitter") 
     keyUp()

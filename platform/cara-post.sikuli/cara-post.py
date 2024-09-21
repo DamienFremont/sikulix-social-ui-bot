@@ -39,8 +39,6 @@ try:
 
     sleep(1)
     
-    runScript("../platform/windows-takescreenshot", "-cara-success") 
-except FindFailed:
-    runScript("../platform/windows-takescreenshot", "-cara-error")
 finally:
+    runScript("../platform/windows-takescreenshot", "-cara")
     keyUp()

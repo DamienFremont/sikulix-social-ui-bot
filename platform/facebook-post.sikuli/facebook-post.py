@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20211222_004219 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "20211230_234721 #pet #cat #tabbycat @frimoussethecat (o.o)"
 arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20211222_004219-compressed.jpg"
+arg3_img_fn ="20211230_234721-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -38,7 +38,6 @@ try:
     type(Key.TAB, KEY_SHIFT)
     type(Key.TAB, KEY_SHIFT)
     type(Key.TAB, KEY_SHIFT)
-    type(Key.TAB, KEY_SHIFT)
     type(Key.ENTER)
     
     # SUCCESS
@@ -46,11 +45,7 @@ try:
     
     # ERROR: already reposted, cancel
     # TODO
-    
-    sleep(1)
-    
-    runScript("../platform/windows-takescreenshot", "-facebook-success") 
-except FindFailed:
-    runScript("../platform/windows-takescreenshot", "-facebook-error")
+        
 finally:
+    runScript("../platform/windows-takescreenshot", "-facebook")
     keyUp()

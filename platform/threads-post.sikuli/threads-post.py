@@ -43,8 +43,6 @@ try:
     
     sleep(1)
     
-    runScript("../platform/windows-takescreenshot", "-threads-success") 
-except FindFailed:
-    runScript("../platform/windows-takescreenshot", "-threads-error")
 finally:
+    runScript("../platform/windows-takescreenshot", "-threads")
     keyUp()

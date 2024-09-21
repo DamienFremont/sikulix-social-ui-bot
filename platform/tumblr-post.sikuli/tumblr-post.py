@@ -48,8 +48,6 @@ try:
     
     sleep(1)
     
-    runScript("../platform/windows-takescreenshot", "-tumblr-success") 
-except FindFailed:
-    runScript("../platform/windows-takescreenshot", "-tumblr-error")
 finally:
+    runScript("../platform/windows-takescreenshot", "-tumblr")
     keyUp()

@@ -53,9 +53,7 @@ try:
     # ERROR: already reposted, cancel
     # TODO
 
-    runScript("../platform/windows-takescreenshot", "-mastodon-success") 
-except FindFailed:
-    runScript("../platform/windows-takescreenshot", "-mastodon-error")
 finally:
+    runScript("../platform/windows-takescreenshot", "-mastodon")
     keyUp()
 

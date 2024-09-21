@@ -41,8 +41,6 @@ try:
 
     sleep(1)
     
-    runScript("../platform/windows-takescreenshot", "-flickr-success") 
-except FindFailed:
-    runScript("../platform/windows-takescreenshot", "-flickr-error")
 finally:
+    runScript("../platform/windows-takescreenshot", "-flickr")
     keyUp()
