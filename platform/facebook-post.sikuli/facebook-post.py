@@ -42,9 +42,6 @@ try:
     
     # SUCCESS
     # TODO
-    
-    # ERROR: already reposted, cancel
-    # TODO
         
 finally:
     runScript("../platform/windows-takescreenshot", "-facebook")
