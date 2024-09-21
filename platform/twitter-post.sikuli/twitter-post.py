@@ -1,12 +1,14 @@
 import sys.argv
 
-arg1_text = "20210119_140852 #pet #cat #tabbycat @frimoussethecat (o.o)"
-arg2_clip = "true"
+arg1_text = "20211230_234721 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
+arg3_img_fn ="20211230_234721-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
     arg1_text = sys.argv[1]
-    arg2_clip = sys.argv[2]
+    arg2_img_dir = sys.argv[2]
+    arg3_img_fn = sys.argv[3]
     
 try:
 
@@ -15,13 +17,15 @@ try:
     sleep(1)
 
     # add text
-    ## type text
-    type(arg1_text)
+    paste(arg1_text)
 
     # add pict
-    if arg2_clip.lower() == "true":
-        type("v", KeyModifier.CTRL)
-        sleep(10)
+    click("twitter-post-upload.png")
+    sleep(1)
+    
+    # select picture
+    runScript("firefox-file-upload", arg2_img_dir, arg3_img_fn)
+    sleep(1)
 
 
     # submit
@@ -29,11 +33,6 @@ try:
 
     # SUCCESS
     # TODO
-
-    # ERROR: already reposted, cancel
-    # TODO
-
-    sleep(1)
 
 finally:
     runScript("../platform/windows-takescreenshot", "-twitter") 
