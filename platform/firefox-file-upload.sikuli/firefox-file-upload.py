@@ -11,8 +11,12 @@ if len(sys.argv) > 1:
 # wait popup
 wait("firefox-file-upload-popup.png")
 
+sleep(1)
+
 # focus path
 type("l", KeyModifier.CTRL)
+
+sleep(1)
 
 # focus filename
 type(Key.TAB, KEY_SHIFT)
@@ -20,6 +24,7 @@ type(Key.TAB, KEY_SHIFT)
 type(Key.TAB, KEY_SHIFT)
 type(Key.TAB, KEY_SHIFT)
 type(Key.TAB, KEY_SHIFT)
+
 paste(arg1_img_dir + arg2_img_fn)
 
 # ok
