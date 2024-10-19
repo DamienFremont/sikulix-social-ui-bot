@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20211231_999999 #pet #cat #tabbycat @frimoussethecat (o.o)"
-arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20211231_999999-compressed.jpg"
+arg1_text = "20220124_143123 #pet #cat #tabbycat #vancouver #canada @frimoussethecat (o.o)"
+arg2_img_dir = "file:c:/workdir/project-frimousse-social/"
+arg3_img_fn ="20220124_143123-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -31,12 +31,8 @@ try:
     sleep(1)
     
     # submit
-    type(Key.TAB)
-    type(Key.TAB)
-    type(Key.TAB)
-    type(Key.TAB)
-    type(Key.TAB)
-    type(Key.ENTER)
+    wait("threads-post-confirm.png", 30)
+    click("threads-post-confirm.png")
     
     # SUCCESS
     # TODO
