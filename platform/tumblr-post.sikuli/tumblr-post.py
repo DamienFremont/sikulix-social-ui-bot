@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20211230_234721 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "20220211_202422 #pet #cat #tabbycat @frimoussethecat (o.o)"
 arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20211230_234721-compressed.jpg"
+arg3_img_fn ="20220211_202422-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -13,11 +13,11 @@ if len(sys.argv) > 1:
 try:
     
     # page loaded    
-    wait("tumblr-post-create-2.png", 30)
+    #wait("tumblr-post-create-2.png", 30)
 
     # post
-    click("tumblr-post-create-2.png")
-    click("tumblr-post-create-photo.png")
+    #click("tumblr-post-create-2.png")
+    #click("tumblr-post-create-photo.png")
 
     # upload picture   
     click("tumblr-post-upload.png")
