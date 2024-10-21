@@ -1,7 +1,7 @@
 type("l", KeyModifier.CTRL)
 
 # start twitter
-paste("https://x.com/")
+paste("https://x.com/compose/post/")
 type(Key.ENTER)
 
 # accept

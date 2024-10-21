@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20211230_234721 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "20220211_202422 #pet #cat #tabbycat @frimoussethecat (o.o)"
 arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20211230_234721-compressed.jpg"
+arg3_img_fn ="20220211_202422-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -13,7 +13,7 @@ if len(sys.argv) > 1:
 try:
 
     # post
-    click("tw-post-button.png")
+    click("twitter-post-start.png")
     sleep(1)
 
     # add text
@@ -25,8 +25,7 @@ try:
     
     # select picture
     runScript("firefox-file-upload", arg2_img_dir, arg3_img_fn)
-    sleep(1)
-
+    sleep(3)
 
     # submit
     click("tw-post-submit-btn.png")
