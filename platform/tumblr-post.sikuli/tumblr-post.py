@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20220211_202422 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "20220219_222315 #pet #cat #tabbycat @frimoussethecat (o.o)"
 arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20220211_202422-compressed.jpg"
+arg3_img_fn ="20220219_222315-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -13,14 +13,22 @@ if len(sys.argv) > 1:
 try:
     
     # page loaded    
-    #wait("tumblr-post-create-2.png", 30)
+    wait("tumblr-post-create-2.png", 30)
 
     # post
-    #click("tumblr-post-create-2.png")
-    #click("tumblr-post-create-photo.png")
+    click("tumblr-post-create-2.png")
+    click("tumblr-post-create-txt.png")
+    wait("tumblr-post-create-txt2-1.png", 30)
+
+    # add text
+    sleep(1)
+    paste(arg1_text)
+    sleep(1)
+    type(Key.ENTER)
 
     # upload picture   
-    click("tumblr-post-upload.png")
+    click("tumblr-post-create-txt2.png")
+    click("tumblr-post-upload2.png")
     sleep(1)
     
     # select picture
@@ -30,17 +38,13 @@ try:
     # uploaded
     wait("tumblr-post-submit-2.png", 30)
     
-    # add text
-    click("tumblr-post-text.png")
-    paste(arg1_text)
-    sleep(1)
     
     # submit
     click("tumblr-post-submit-2.png")
     
     #confirm
     sleep(2)
-    if exists("tumblr-post-confirm-tags1.png"):
+    if exists("tumblr-post-confirm-tags2.png"):
         click("tumblr-post-confirm-tags2.png")
     
     # SUCCESS
