@@ -66,6 +66,9 @@ try:
     # cara
     runScript("../platform/firefox-tab-new")
     runScript("../platform/firefox-url-goto", "https://cara.app/frimoussethecat")
+    # bluesky
+    runScript("../platform/firefox-tab-new")
+    runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
     
     # @Account2
     # instagram
