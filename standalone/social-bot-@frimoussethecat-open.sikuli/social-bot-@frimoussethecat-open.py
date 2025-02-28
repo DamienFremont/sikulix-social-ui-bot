@@ -49,6 +49,9 @@ try:
     # flickr
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://www.flickr.com/photos/frimoussethecat/")
+    # bluesky
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
 
     # @Account1
     # twitter
@@ -66,9 +69,6 @@ try:
     # cara
     runScript("../platform/firefox-tab-new")
     runScript("../platform/firefox-url-goto", "https://cara.app/frimoussethecat")
-    # bluesky
-    runScript("../platform/firefox-tab-new")
-    runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
     
     # @Account2
     # instagram
