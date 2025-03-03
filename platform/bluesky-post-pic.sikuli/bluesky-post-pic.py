@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20200112_160334 #pet #cat #tabbycat #nantes #france @frimoussethecat (o.o)"
-arg2_img_dir = "file:c:/workdir/project-frimousse-social/"
-arg3_img_fn ="20200112_160334_006-compressed-compressed.jpg"
+arg1_text = "20200814_084201 #pet #cat #tabbycat #montreal #canada @frimoussethecat (o.o)"
+arg2_img_dir = "file:c:/workdir/project-frimousse-social/_ARCHIVE/2020/"
+arg3_img_fn ="20200814_084201-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -35,11 +35,11 @@ try:
     sleep(1)
     
     # submit
-    wait("bluesky-post-confirm-yes.png", 300)
+    wait("bluesky-post-confirm-yes.png", 30)
     click("bluesky-post-confirm-yes-1.png")
 
     # success
-    wait("bluesky-post-comfirmed.png", 300)
+    wait("bluesky-post-comfirmed.png", 30)
 
 finally:
     runScript("../platform/windows-takescreenshot", "-twitter") 
