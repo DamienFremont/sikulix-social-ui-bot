@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20211220_005455 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "20220327_104319 #pet #cat #tabbycat #vancouver #canada @frimoussethecat (o.o)"
 arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20211220_005455-compressed.jpg"
+arg3_img_fn ="20220327_104319-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -43,7 +43,10 @@ try:
     # submit
     click("mastodon-post-submit-2.png")
     
-    
+    # access
+    click("mastodon-post-access-3.png")
+
+
     # check upload
     #wait("mastodon-post-check.png", 120)
     
