@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20220219_222315 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg1_text = "20220411_192141 #pet #cat #tabbycat #vancouver #canada @frimoussethecat (o.o)"
 arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20220219_222315-compressed.jpg"
+arg3_img_fn ="20220411_192141-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
