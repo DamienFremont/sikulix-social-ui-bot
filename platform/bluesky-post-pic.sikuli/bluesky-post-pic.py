@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20200814_084201 #pet #cat #tabbycat #montreal #canada @frimoussethecat (o.o)"
-arg2_img_dir = "file:c:/workdir/project-frimousse-social/_ARCHIVE/2020/"
-arg3_img_fn ="20200814_084201-compressed.jpg"
+arg1_text = "20200826_170209 #pet #cat #tabbycat #montreal #canada @frimoussethecat (o.o)"
+arg2_img_dir = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/_ARCHIVE/2020/"
+arg3_img_fn ="20200826_170209-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
