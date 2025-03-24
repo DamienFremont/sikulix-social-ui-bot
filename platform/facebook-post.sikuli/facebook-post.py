@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20211231_999999 #pet #cat #tabbycat @frimoussethecat (o.o)"
-arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20211231_999999-compressed.jpg"
+arg1_text = "20220423_004848 #pet #cat #tabbycat #vancouver #canada @frimoussethecat (o.o)"
+arg2_img_dir = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/"
+arg3_img_fn ="20220423_004848-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -34,9 +34,11 @@ try:
         
     # select picture
     runScript("firefox-file-upload", arg2_img_dir, arg3_img_fn)
-    sleep(1)
+    sleep(2)
         
     # submit
+    click("facebook-post-next.png")
+    sleep(3)    
     click("facebook-post-confirm.png")
     
     # SUCCESS
