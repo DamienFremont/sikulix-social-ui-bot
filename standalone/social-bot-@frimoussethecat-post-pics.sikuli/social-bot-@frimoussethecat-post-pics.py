@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20220420_090635"
+ARG_POST_ID = "20220423_004848"
 ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #vancouver #canada @frimoussethecat (o.o)"
 ARG_IMG_DIR = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/"
 ARG_IMG_NAM = ARG_POST_ID + "-compressed.jpg"
@@ -15,8 +15,32 @@ try:
     
     # browser
     runScript("../platform/cmd-run", 'firefox')
-    
 
+    # instagram
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/instagram-open")
+    runScript("../platform/instagram-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
+    
+    # twitter
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/twitter-open")
+    runScript("../platform/twitter-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
+     
+    # facebook
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/facebook-open")
+    runScript("../platform/facebook-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
+
+    # tumblr
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/tumblr-open")
+    runScript("../platform/tumblr-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
+ 
+    # flickr
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/flickr-open")
+    runScript("../platform/flickr-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)
+    
     # mastodon
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/mastodon-open")
