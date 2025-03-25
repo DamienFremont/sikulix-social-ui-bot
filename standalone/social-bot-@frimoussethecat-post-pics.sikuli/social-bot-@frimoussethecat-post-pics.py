@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20220423_004848"
+ARG_POST_ID = "20220425_105357"
 ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #vancouver #canada @frimoussethecat (o.o)"
 ARG_IMG_DIR = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/"
 ARG_IMG_NAM = ARG_POST_ID + "-compressed.jpg"
@@ -59,8 +59,38 @@ try:
     runScript("../platform/threads-open")
     runScript("../platform/threads-post", ARG_TXT, ARG_IMG_DIR, ARG_IMG_NAM)   
 
+    # CHECK ************************************************
+    
+    runScript("../platform/cmd-run", 'firefox')    
+    # instagram
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.instagram.com/frimousse_the_cat/")
+    # twitter
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
+    # facebook
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.facebook.com/frimoussethecat/")
+    # tumblr
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.tumblr.com/frimoussethecat")
+    # flickr
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.flickr.com/photos/frimoussethecat/")
+    # mastodon
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://mastodon.social/@frimoussethecat")
+    # cara
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://cara.app/frimoussethecat")
+    # threads
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.threads.net/@frimousse_the_cat")
+    # bluesky
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
 
-    # end ***********************************************  
+    # end ***********************************************
 
 finally:
     runScript("../platform/windows-takescreenshot", "-frimoussethecat")
