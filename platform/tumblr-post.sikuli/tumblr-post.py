@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20220411_192141 #pet #cat #tabbycat #vancouver #canada @frimoussethecat (o.o)"
-arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20220411_192141-compressed.jpg"
+arg1_text = "20220503_130400 #pet #cat #tabbycat #vancouver #canada @frimoussethecat (o.o)"
+arg2_img_dir = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/"
+arg3_img_fn ="20220503_130400-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -44,8 +44,8 @@ try:
     
     #confirm
     sleep(2)
-    if exists("tumblr-post-confirm-tags2.png"):
-        click("tumblr-post-confirm-tags2.png")
+    if exists("tumblr-post-confirm2.png"):
+        click("tumblr-post-confirm2-1.png")
     
     # SUCCESS
     # TODO
