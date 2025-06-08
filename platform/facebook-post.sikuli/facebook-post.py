@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20220423_004848 #pet #cat #tabbycat #vancouver #canada @frimoussethecat (o.o)"
+arg1_text = "20220716_151715 #pet #cat #tabbycat #vancouver #canada @frimoussethecat (o.o)"
 arg2_img_dir = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/"
-arg3_img_fn ="20220423_004848-compressed.jpg"
+arg3_img_fn ="20220716_151715-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -18,14 +18,7 @@ try:
     # post
     click("fb-post-create.png")
     sleep(1)
-    
-    wait("facebook-post-form.png", 10)
-      
-    # add text
-    paste(arg1_text)
-    
-    sleep(1)
-        
+
     # upload picture
     type(Key.TAB)
     type(Key.TAB)
@@ -35,7 +28,11 @@ try:
     # select picture
     runScript("firefox-file-upload", arg2_img_dir, arg3_img_fn)
     sleep(2)
-        
+   
+    # add text
+    paste(arg1_text)
+    sleep(1)
+    
     # submit
     click("facebook-post-next.png")
     sleep(3)    
