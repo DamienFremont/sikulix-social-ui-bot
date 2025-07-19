@@ -45,7 +45,7 @@ try:
     click("insta-post-submit.png")
     
     # SUCCESS
-    # TODO
+    wait("insta-post-submit-confirm.png", 30)
     
     # ERROR: already reposted, cancel
     # TODO
