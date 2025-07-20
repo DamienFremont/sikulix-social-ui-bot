@@ -1,7 +1,7 @@
 import sys.argv
 
-arg1_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg2_img_fn ="20211220_005455-compressed.jpg"
+arg1_img_dir = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/"
+arg2_img_fn ="20220723_011713-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -10,22 +10,23 @@ if len(sys.argv) > 1:
 
 # wait popup
 wait("firefox-file-upload-popup.png")
-
 sleep(1)
 
 # focus path
-type("l", KeyModifier.CTRL)
-
-sleep(1)
+#type("l", KeyModifier.CTRL)
+#sleep(1)
 
 # focus filename
-type(Key.TAB, KEY_SHIFT)
-type(Key.TAB, KEY_SHIFT)
-type(Key.TAB, KEY_SHIFT)
-type(Key.TAB, KEY_SHIFT)
-type(Key.TAB, KEY_SHIFT)
+#type(Key.TAB, KEY_SHIFT)
+#type(Key.TAB, KEY_SHIFT)
+#type(Key.TAB, KEY_SHIFT)
+#type(Key.TAB, KEY_SHIFT)
+#type(Key.TAB, KEY_SHIFT)
+type("n", KeyModifier.ALT)
+sleep(0.5)
 
 paste(arg1_img_dir + arg2_img_fn)
+sleep(0.5)
 
 # ok
 type(Key.ENTER)
