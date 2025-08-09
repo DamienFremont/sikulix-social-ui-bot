@@ -31,6 +31,10 @@ try:
     click("flickr-post-submit-1.png")
     click("flickr-post-submit2.png")
     sleep(1)
+
+    # success
+    wait("flickr-post-continue.png")
+    click("flickr-post-continue-1.png")
     
 finally:
     runScript("../platform/windows-takescreenshot", "-flickr")
