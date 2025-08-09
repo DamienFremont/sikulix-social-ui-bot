@@ -1,8 +1,8 @@
 import sys.argv
 
-arg1_text = "20211231_999999 #pet #cat #tabbycat @frimoussethecat (o.o)"
-arg2_img_dir = "file://///192.168.8.2/workdir/project-frimousse-social/"
-arg3_img_fn ="20211231_999999-compressed.jpg"
+arg1_text = "20220730_220243 #pet #cat #tabbycat @frimoussethecat (o.o)"
+arg2_img_dir = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/"
+arg3_img_fn ="20220730_220243-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -18,6 +18,8 @@ try:
     # post
     click("insta-post-create-btn.png")
     sleep(1)
+
+    click("insta-post-post.png")
     
     # upload picture
     click("insta-post-upload.png")
