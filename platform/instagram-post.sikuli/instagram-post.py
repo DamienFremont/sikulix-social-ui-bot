@@ -1,14 +1,12 @@
 import sys.argv
 
-arg1_text = "20220730_220243 #pet #cat #tabbycat @frimoussethecat (o.o)"
-arg2_img_dir = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/"
-arg3_img_fn ="20220730_220243-compressed.jpg"
+ARG_TXT = "20220730_220243 #pet #cat #tabbycat #france @frimoussethecat (o.o)"
+ARG_IMG_FN = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/20220730_220243-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
-    arg1_text = sys.argv[1]
-    arg2_img_dir = sys.argv[2]
-    arg3_img_fn = sys.argv[3]
+    ARG_TXT = sys.argv[1]
+    ARG_IMG_FN = sys.argv[2]
 
 try:
 
@@ -26,7 +24,7 @@ try:
     sleep(1)
     
     # select picture
-    runScript("firefox-file-upload", arg2_img_dir, arg3_img_fn)
+    runScript("firefox-file-upload-2", ARG_IMG_FN)
     sleep(1)
     
     # next...
@@ -41,17 +39,13 @@ try:
     type(Key.TAB)
     type(Key.TAB)
     type(Key.TAB)
-    paste(arg1_text)
+    paste(ARG_TXT)
     
     # submit
     click("insta-post-submit.png")
     
     # SUCCESS
-    wait("insta-post-submit-confirm.png", 30)
-    
-    # ERROR: already reposted, cancel
-    # TODO
-    
+    wait("insta-post-submit-confirm.png", 30)    
     sleep(1)
 
 finally:
