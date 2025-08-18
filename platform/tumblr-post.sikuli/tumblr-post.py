@@ -1,7 +1,7 @@
 import sys.argv
 
-ARG_TXT = "20220730_220243 #pet #cat #tabbycat #france @frimoussethecat (o.o)"
-ARG_IMG_FN = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/20220730_220243-compressed.jpg"
+ARG_TXT = "20220815_110219 #pet #cat #tabbycat #france @frimoussethecat (o.o)"
+ARG_IMG_FN = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/20220815_110219-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -11,15 +11,13 @@ if len(sys.argv) > 1:
 try:
     
     # page loaded    
-    wait("tumblr-post-create-2.png", 30)
+    wait("tumblr-post-create-text.png", 30)
 
     # post
-    click("tumblr-post-create-2.png")
-    click("tumblr-post-create-txt.png")
-    wait("tumblr-post-create-txt2-1.png", 30)
-
-    # add text
+    click("tumblr-post-create-text-1.png")
     sleep(1)
+    
+    # add text
     paste(ARG_TXT)
     sleep(1)
     type(Key.ENTER)
@@ -41,9 +39,6 @@ try:
     click("tumblr-post-submit-2.png")
     
     #confirm
-    sleep(2)
-    if exists("tumblr-post-confirm2.png"):
-        click("tumblr-post-confirm2-1.png")
     sleep(1)
         
 finally:
