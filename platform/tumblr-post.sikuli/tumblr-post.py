@@ -40,6 +40,8 @@ try:
     
     #confirm
     sleep(1)
+    click("tumblr-post-post.png")
+    sleep(1)
         
 finally:
     runScript("../platform/windows-takescreenshot", "-tumblr")
