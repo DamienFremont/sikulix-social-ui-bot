@@ -1,5 +1,5 @@
 # NOTE: using 1080p resolution
-
+    
 # RESET SCREEN
 type("0", Key.CTRL)
 sleep(0.5)
@@ -16,6 +16,9 @@ sleep(0.5)
 # COPY TEXT
 type("c", Key.CTRL)
 sleep(0.5)
+
+# CLEAR SELECT
+click(location)
 
 # GET TEXT
 message_text = Env.getClipboard()
