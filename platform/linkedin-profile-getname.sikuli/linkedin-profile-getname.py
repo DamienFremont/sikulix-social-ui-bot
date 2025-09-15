@@ -1,4 +1,13 @@
 # NOTE: using 1080p resolution
+import sys.argv
+import shutil
+
+# CONST
+ARG_VERTICAL_MARGIN = "0"
+
+# parameters
+if len(sys.argv) > 1:
+    ARG_VERTICAL_MARGIN = sys.argv[1]
     
 # RESET SCREEN
 type("0", Key.CTRL)
@@ -7,7 +16,7 @@ type(Key.HOME)
 sleep(0.5)
 
 # SELECT NAME
-location = Location(400, 475)
+location = Location(400, 360 + int(ARG_VERTICAL_MARGIN))
 click(location)
 click(location)
 click(location)
