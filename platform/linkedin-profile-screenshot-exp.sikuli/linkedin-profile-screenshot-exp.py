@@ -11,13 +11,13 @@ if len(sys.argv) > 1:
 # RESET ZOOM
 type("0", Key.CTRL)
 sleep(0.5)
-type(Key.HOME)
-sleep(0.5)
 
 # TAKE SCREENSHOTS
 screen = Screen()
 
 # EXPERIENCE
+type(Key.HOME)
+sleep(0.5)
 type(Key.PAGE_DOWN)
 sleep(0.5)
 region = Region(390, 162, 1190 - 390, 1030 - 162)
