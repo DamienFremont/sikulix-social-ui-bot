@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20221002_221638"
+ARG_POST_ID = "20221014_235831"
 ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #france @frimoussethecat (o.o)"
 ARG_IMG_FN = "file:c:/workdir/project-frimousse-social/" + ARG_POST_ID + "-compressed.jpg"
 ARG_FFC_ID = "4"
@@ -10,8 +10,9 @@ try:
     # start ***********************************************
     
     # browser
-    runScript("../platform/cmd-run", 'firefox')
-
+    runScript("../platform/cmd-run", 'firefox')    
+    runScript("../platform/windows-fullscreen")
+    
     # instagram
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/instagram-open")
@@ -59,6 +60,7 @@ try:
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
 
+    runScript("../platform/windows-fullscreen")
     # end ***********************************************
 
 finally:
