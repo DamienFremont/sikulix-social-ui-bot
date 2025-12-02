@@ -49,7 +49,7 @@ try:
     
     #confirm
     sleep(1)
-    click("tumblr-post-post.png")
+    click("tumblr-post-post-1.png")
     sleep(1)
         
 finally:
