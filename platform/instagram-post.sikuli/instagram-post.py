@@ -11,9 +11,14 @@ if len(sys.argv) > 1:
 try:
 
     # page loaded
-    wait("insta-post-create-btn.png", 30)
+    wait("insta-menu.png", 30)
     
     # post
+
+    #mouseMove("insta-menu-2.png") // FIXME
+    click("insta-menu-1.png")
+    click("insta-menu-1.png")
+    
     click("insta-post-create-btn.png")
     sleep(1)
 
