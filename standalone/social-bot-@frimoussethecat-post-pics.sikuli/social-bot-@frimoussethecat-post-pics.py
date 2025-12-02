@@ -61,7 +61,44 @@ try:
     runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
 
     runScript("../platform/windows-fullscreen")
+
+    # CHECK
+    
+    runScript("../platform/cmd-run", 'firefox')
+    # instagram
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.instagram.com/frimousse_the_cat/")
+    # twitter
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
+    # facebook
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.facebook.com/frimoussethecat/")
+    # tumblr
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.tumblr.com/frimoussethecat")
+    # threads
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.threads.net/@frimousse_the_cat")
+    # flickr
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.flickr.com/photos/frimoussethecat/")
+    # mastodon
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://mastodon.social/@frimoussethecat")
+    # cara
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://cara.app/frimoussethecat")
+    
+    # linkedin
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.linkedin.com/in/frimoussethecat/")
+    # bluesky
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
+    
     # end ***********************************************
+
 
 finally:
     runScript("../platform/windows-takescreenshot", "-frimoussethecat")
