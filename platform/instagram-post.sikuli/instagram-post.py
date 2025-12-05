@@ -16,8 +16,6 @@ try:
     # post
 
     #mouseMove("insta-menu-2.png") // FIXME
-    click("insta-menu-1.png")
-    click("insta-menu-1.png")
     
     click("insta-post-create-btn.png")
     sleep(1)
