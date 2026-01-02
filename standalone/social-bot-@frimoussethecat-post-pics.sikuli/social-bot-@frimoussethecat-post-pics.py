@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20221110_205701"
+ARG_POST_ID = "20221231_999999"
 ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #france @frimoussethecat (o.o)"
 ARG_IMG_FN = "file:c:/Users/damien/workspace/project-frimousse-social/" + ARG_POST_ID + "-compressed.jpg"
 ARG_FFC_ID = "4"
@@ -13,6 +13,11 @@ try:
     runScript("../platform/cmd-run", 'firefox')    
     runScript("../platform/windows-fullscreen")
     
+    # facebook
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/facebook-open")
+    runScript("../platform/facebook-post", ARG_TXT, ARG_IMG_FN)
+    
     # instagram
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/instagram-open")
@@ -22,12 +27,9 @@ try:
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/twitter-open")
     runScript("../platform/twitter-post", ARG_TXT, ARG_IMG_FN)
-     
-    # facebook
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/facebook-open")
-    runScript("../platform/facebook-post", ARG_TXT, ARG_IMG_FN)
 
+    # pinterest 
+    
     # tumblr
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/tumblr-open")
@@ -65,15 +67,15 @@ try:
     # CHECK
     
     runScript("../platform/cmd-run", 'firefox')
+    # facebook
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.facebook.com/frimoussethecat/")
     # instagram
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://www.instagram.com/frimousse_the_cat/")
     # twitter
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
-    # facebook
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.facebook.com/frimoussethecat/")
     # tumblr
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://www.tumblr.com/frimoussethecat")
@@ -96,6 +98,9 @@ try:
     # bluesky
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
+    # pinterest
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://fr.pinterest.com/frimoussethecat/_pins/")
     
     # end ***********************************************
 
