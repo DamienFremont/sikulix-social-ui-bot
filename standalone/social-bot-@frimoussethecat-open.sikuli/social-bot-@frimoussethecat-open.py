@@ -13,21 +13,24 @@ try:
 
     # @MainAccount
     
-    # instagram
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.instagram.com/frimousse_the_cat/")
-    # twitter
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
-    # tiktok
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.tiktok.com/@frimousse_the_cat")
-    # youtube
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.youtube.com/@FrimousseTheCat")
     # facebook
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://www.facebook.com/frimoussethecat/")
+    # youtube
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.youtube.com/@FrimousseTheCat")
+    # instagram
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.instagram.com/frimousse_the_cat/")
+    # tiktok
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://www.tiktok.com/@frimousse_the_cat")
+    # twitter
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
+    # pinterest
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://fr.pinterest.com/frimoussethecat/_pins/")    
     # linkedin
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://www.linkedin.com/in/frimoussethecat/")
