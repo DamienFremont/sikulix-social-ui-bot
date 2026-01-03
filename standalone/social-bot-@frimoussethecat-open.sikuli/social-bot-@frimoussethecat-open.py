@@ -30,7 +30,10 @@ try:
     runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
     # pinterest
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://fr.pinterest.com/frimoussethecat/_pins/")    
+    runScript("../platform/firefox-url-goto", "https://fr.pinterest.com/frimoussethecat/_pins/")
+    # imgur
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://imgur.com/user/frimoussethecat/")
     # linkedin
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://www.linkedin.com/in/frimoussethecat/")
