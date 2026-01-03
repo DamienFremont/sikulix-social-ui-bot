@@ -6,6 +6,10 @@ ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #france @frimoussethecat (o.o)"
 ARG_IMG_FN = "file:c:/Users/damien/workspace/project-frimousse-social/" + ARG_POST_ID + "-compressed.jpg"
 ARG_FFC_ID = "4"
 
+ARG_POST_ID2 = "20200112_160334_006"
+ARG_TXT2 = ARG_POST_ID2 + " #pet #cat #tabbycat #france @frimoussethecat (o.o)"
+ARG_IMG_FN2 = "file:c:/Users/damien/workspace/project-frimousse-social/_ARCHIVE/2020/" + ARG_POST_ID2 + "-compressed.jpg"
+
 try:
     # start ***********************************************
     
@@ -28,7 +32,15 @@ try:
     runScript("../platform/twitter-open")
     runScript("../platform/twitter-post", ARG_TXT, ARG_IMG_FN)
 
-    # pinterest 
+    # pinterest
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/pinterest-open")
+    runScript("../platform/pinterest-post-pic", ARG_TXT2, ARG_IMG_FN2)
+    
+    # imgur
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/imgur-open")
+    runScript("../platform/imgur-post-pic", ARG_TXT2, ARG_IMG_FN2)
     
     # tumblr
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
@@ -76,6 +88,12 @@ try:
     # twitter
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
+    # pinterest
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://fr.pinterest.com/frimoussethecat/_pins/")
+    # imgur
+    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-url-goto", "https://imgur.com/user/frimoussethecat/")
     # tumblr
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://www.tumblr.com/frimoussethecat")
@@ -98,9 +116,6 @@ try:
     # bluesky
     runScript("../platform/firefox-container-new", ARG_FFC_ID)
     runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
-    # pinterest
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://fr.pinterest.com/frimoussethecat/_pins/")
     
     # end ***********************************************
 
