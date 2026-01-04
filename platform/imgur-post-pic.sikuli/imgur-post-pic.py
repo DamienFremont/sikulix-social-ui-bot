@@ -1,12 +1,14 @@
 import sys.argv
 
-ARG_TXT = "20110001 #pet #cat #tabbycat #france @frimoussethecat (o.o)"
-ARG_IMG_FN = "file:c:/Users/damien/workspace/project-frimousse-social/20110001-compressed.jpg"
+ARG_TITLE = "TEST #pet #cat #tabbycat #france @frimoussethecat (o.o)"
+ARG_IMAGE = "file:c:/Users/damien/workspace/project-frimousse-social/folder.jpg"
+ARG_DESCR = "20110001 #pet #cat #tabbycat #france @frimoussethecat (o.o https://linktr.ee/frimoussethecat)"
 
 # parameters
 if len(sys.argv) > 1:
-    ARG_TXT = sys.argv[1]
-    ARG_IMG_FN = sys.argv[2]
+    ARG_TITLE = sys.argv[1]
+    ARG_IMAGE = sys.argv[2]
+    ARG_DESCR = sys.argv[3]
     
 try:
     # post
@@ -18,12 +20,17 @@ try:
     sleep(1)
 
     # select picture
-    runScript("firefox-file-upload-2", ARG_IMG_FN)
+    runScript("firefox-file-upload-2", ARG_IMAGE)
     sleep(3)
 
-    # add text
+    # add title
     click("imgur-post-pic-title.png")
-    paste(ARG_TXT)
+    paste(ARG_TITLE)
+    sleep(1)
+
+    # add title
+    click("imgur-post-form-description.png")
+    paste(ARG_DESCR)
     sleep(1)
 
     # submit
