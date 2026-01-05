@@ -1,125 +1,127 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_POST_ID = "20221231_999999"
-ARG_TXT = ARG_POST_ID + " #pet #cat #tabbycat #france @frimoussethecat (o.o)"
-ARG_IMG_FN = "file:c:/Users/damien/workspace/project-frimousse-social/" + ARG_POST_ID + "-compressed.jpg"
-ARG_FFC_ID = "4"
+ARG_ID    = "20230101_012935"
+ARG_TEXT  = "Meow in Nantes, FRANCE. #pet #cat #france #frimoussethecat"
+ARG_TITLE = "Meow in Nantes, FRANCE."
+ARG_DESCR = "Check me at https://linktr.ee/frimoussethecat #pet #cat #france #frimoussethecat"
+ARG_PATH = "file:c:/Users/damien/workspace/project-frimousse-social/"
+FF_CONT = "4"
 
-ARG_POST_ID2 = "20200112_160334_006"
-ARG_TXT2 = ARG_POST_ID2 + " #pet #cat #tabbycat #france @frimoussethecat (o.o)"
-ARG_IMG_FN2 = "file:c:/Users/damien/workspace/project-frimousse-social/_ARCHIVE/2020/" + ARG_POST_ID2 + "-compressed.jpg"
+# VARS
+POST_IMAGE = ARG_PATH + ARG_ID + "-compressed.jpg"
+POST_TEXT =  ARG_ID + " " + ARG_TEXT
+POST_TITLE = ARG_ID + " " + ARG_TITLE
+POST_DESCR = ARG_ID + " " + ARG_DESCR
 
 try:
-    # start ***********************************************
+    # START ***********************************************
     
     # browser
     runScript("../platform/cmd-run", 'firefox')    
     runScript("../platform/windows-fullscreen")
     
     # facebook
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    # TODO: runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.facebook.com/")
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/facebook-open")
-    runScript("../platform/facebook-post", ARG_TXT, ARG_IMG_FN)
+    runScript("../platform/facebook-post", POST_TEXT, POST_IMAGE)
     
     # instagram
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/instagram-open")
-    runScript("../platform/instagram-post", ARG_TXT, ARG_IMG_FN)
+    runScript("../platform/instagram-post", POST_TEXT, POST_IMAGE)
     
     # twitter
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/twitter-open")
-    runScript("../platform/twitter-post", ARG_TXT, ARG_IMG_FN)
+    runScript("../platform/twitter-post", POST_TEXT, POST_IMAGE)
 
     # pinterest
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/pinterest-open")
-    runScript("../platform/pinterest-post-pic", ARG_TXT2, ARG_IMG_FN2)
+    #runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    #runScript("../platform/pinterest-open")
+    #runScript("../platform/pinterest-post-pic", ARG_TXT, ARG_IMG_FN)
     
     # imgur
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/imgur-open")
-    runScript("../platform/imgur-post-pic", ARG_TXT2, ARG_IMG_FN2)
+    #runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    #runScript("../platform/imgur-open")
+    #runScript("../platform/imgur-post-pic", ARG_TXT, ARG_IMG_FN)
     
     # tumblr
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/tumblr-open")
-    runScript("../platform/tumblr-post", ARG_TXT, ARG_IMG_FN)
+    runScript("../platform/tumblr-post", POST_TEXT, POST_IMAGE)
  
     # flickr
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/flickr-open")
-    runScript("../platform/flickr-post", ARG_TXT, ARG_IMG_FN)
-    
+    runScript("../platform/flickr-post", POST_TEXT, POST_IMAGE)
+    # TODO: runScript("../platform/flickr-post", POST_TITLE, POST_IMAGE, POST_DESCR)
+        
     # mastodon
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/mastodon-open")
-    runScript("../platform/mastodon-post", ARG_TXT, ARG_IMG_FN)
+    runScript("../platform/mastodon-post", POST_TEXT, POST_IMAGE)
 
     # cara
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/cara-open")
-    runScript("../platform/cara-post", ARG_TXT, ARG_IMG_FN)
-
+    runScript("../platform/cara-post", POST_TEXT, POST_IMAGE)
     # FIXME next: empty tab 
     sleep(5)
     
     # threads
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/threads-open")
-    runScript("../platform/threads-post", ARG_TXT, ARG_IMG_FN)   
+    runScript("../platform/threads-post", POST_TEXT, POST_IMAGE)   
     
     # bluesky
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
+    #runScript("../platform/firefox-container-new", FF_CONT)
+    #runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
 
-    runScript("../platform/windows-fullscreen")
-
-    # CHECK
+    # CHECK ***********************************************
     
+    # browser    
     runScript("../platform/cmd-run", 'firefox')
     # facebook
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    # TODO: runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.facebook.com/frimoussethecat/")    
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://www.facebook.com/frimoussethecat/")
     # instagram
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://www.instagram.com/frimousse_the_cat/")
     # twitter
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
     # pinterest
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://fr.pinterest.com/frimoussethecat/_pins/")
     # imgur
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://imgur.com/user/frimoussethecat/")
     # tumblr
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://www.tumblr.com/frimoussethecat")
     # threads
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://www.threads.net/@frimousse_the_cat")
     # flickr
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://www.flickr.com/photos/frimoussethecat/")
     # mastodon
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://mastodon.social/@frimoussethecat")
     # cara
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://cara.app/frimoussethecat")
-    
     # linkedin
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://www.linkedin.com/in/frimoussethecat/")
     # bluesky
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
+    runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
     
-    # end ***********************************************
-
-
+    # END ***********************************************
 finally:
     runScript("../platform/windows-takescreenshot", "-frimoussethecat")
     keyUp()
