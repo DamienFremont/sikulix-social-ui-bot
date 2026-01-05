@@ -1,12 +1,12 @@
 import sys.argv
 
-ARG_TXT = "20220730_220243 #pet #cat #tabbycat #france @frimoussethecat (o.o)"
-ARG_IMG_FN = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/20220730_220243-compressed.jpg"
+ARG_TXT = "TEST #pet #cat #tabbycat #france #frimoussethecat (o.o)"
+ARG_IMG = "file:c:/Users/damien/workspace/project-frimousse-social/folder.jpg"
 
 # parameters
 if len(sys.argv) > 1:
     ARG_TXT = sys.argv[1]
-    ARG_IMG_FN = sys.argv[2]
+    ARG_IMG = sys.argv[2]
 
 try:
     
@@ -29,7 +29,7 @@ try:
     sleep(1)
     
     # select picture
-    runScript("firefox-file-upload-2", ARG_IMG_FN)
+    runScript("firefox-file-upload-2", ARG_IMG)
     sleep(1)
     
     # submit
@@ -37,7 +37,7 @@ try:
     click("bluesky-post-confirm-yes-1.png")
 
     # success
-    wait("bluesky-post-comfirmed.png", 30)
+    wait("bluesky-post-comfirmed.png", 3)
 
 finally:
     runScript("../platform/windows-takescreenshot", "-twitter") 
