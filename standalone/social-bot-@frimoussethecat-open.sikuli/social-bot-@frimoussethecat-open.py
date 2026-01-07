@@ -12,88 +12,36 @@ try:
     runScript("../platform/cmd-run", 'firefox')
 
     # @MainAccount
-    
-    # facebook
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.facebook.com/frimoussethecat/")
-    # youtube
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.youtube.com/@FrimousseTheCat")
-    # instagram
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.instagram.com/frimousse_the_cat/")
-    # tiktok
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.tiktok.com/@frimousse_the_cat")
-    # twitter
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
-    # pinterest
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://fr.pinterest.com/frimoussethecat/_pins/")
-    # imgur
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://imgur.com/user/frimoussethecat/")
-    # linkedin
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.linkedin.com/in/frimoussethecat/")
-    # mastodon
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://mastodon.social/@frimoussethecat")
-    # cara
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://cara.app/frimoussethecat")
-    # threads
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.threads.net/@frimousse_the_cat")
-    # vimeo
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://vimeo.com/frimoussethecat")
-    # tumblr
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.tumblr.com/frimoussethecat")
-    # flickr
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://www.flickr.com/photos/frimoussethecat/")
-    # bluesky
-    runScript("../platform/firefox-container-new", ARG_FFC_ID)
-    runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://www.facebook.com/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://www.youtube.com/@FrimousseTheCat")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://www.tiktok.com/@frimousse_the_cat")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://www.instagram.com/frimousse_the_cat/")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://x.com/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://fr.pinterest.com/frimoussethecat/_pins/")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://imgur.com/user/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://www.tumblr.com/frimoussethecat")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://www.threads.net/@frimousse_the_cat")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://www.flickr.com/photos/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://mastodon.social/@frimoussethecat")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://cara.app/frimoussethecat")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://www.linkedin.com/in/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://bsky.app/profile/frimoussethecat.bsky.social")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://vimeo.com/frimoussethecat")
 
     # @Account1
-    # twitter
-    runScript("../platform/firefox-tab-new")
-    runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
-    # youtube
-    runScript("../platform/firefox-tab-new")
-    runScript("../platform/firefox-url-goto", "https://www.youtube.com/@FrimousseTheCat")
-    # facebook
-    runScript("../platform/firefox-tab-new")
-    runScript("../platform/firefox-url-goto", "https://www.facebook.com/frimoussethecat/")
-    # mastodon
-    runScript("../platform/firefox-tab-new")
-    runScript("../platform/firefox-url-goto", "https://mastodon.social/@frimoussethecat")
-    # cara
-    runScript("../platform/firefox-tab-new")
-    runScript("../platform/firefox-url-goto", "https://cara.app/frimoussethecat")
-    
+    runScript("../platform/firefox-cont-new-url", "1", "https://www.facebook.com/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", "1", "https://www.youtube.com/@FrimousseTheCat")
+    runScript("../platform/firefox-cont-new-url", "1", "https://mastodon.social/@frimoussethecat")
+    runScript("../platform/firefox-cont-new-url", "1", "https://cara.app/frimoussethecat")
+
     # @Account2
-    # instagram
-    runScript("../platform/firefox-container-new", ARG_FFC_ID_2)
-    runScript("../platform/firefox-url-goto", "https://www.instagram.com/frimousse_the_cat/")
-    # twitter
-    runScript("../platform/firefox-container-new", ARG_FFC_ID_2)
-    runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
-    # youtube
-    runScript("../platform/firefox-container-new", ARG_FFC_ID_2)
-    runScript("../platform/firefox-url-goto", "https://www.youtube.com/@FrimousseTheCat")
-    # facebook
-    runScript("../platform/firefox-container-new", ARG_FFC_ID_2)
-    runScript("../platform/firefox-url-goto", "https://www.facebook.com/frimoussethecat/")
-    
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID_2, "https://www.facebook.com/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID_2, "https://www.youtube.com/@FrimousseTheCat")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID_2, "https://mastodon.social/@frimoussethecat")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID_2, "https://cara.app/frimoussethecat")
+
     # @Account3
-    # youtube
-    runScript("../platform/firefox-container-new", ARG_FFC_ID_3)
-    runScript("../platform/firefox-url-goto", "https://www.youtube.com/@FrimousseTheCat")
+    runScript("../platform/firefox-cont-new-url", ARG_FFC_ID_3, "https://www.youtube.com/@FrimousseTheCat")
     
     # end ***********************************************  
     runScript("../platform/windows-takescreenshot", "-success") 
