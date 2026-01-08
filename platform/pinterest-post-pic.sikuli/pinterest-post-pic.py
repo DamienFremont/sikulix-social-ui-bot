@@ -11,13 +11,13 @@ if len(sys.argv) > 1:
     ARG_DESCR = sys.argv[3]
      
 try:
-    # TODO: wait for create and esc focus
+    # init
+    wait("pinterest-create-button-2.png", 5)
     
     # post
-    click("pinterest-create-button.png")
-    sleep(1)
-    
-    click("pinterest-create-button-pin.png")
+    click("pinterest-create-button-1.png")
+    sleep(1)  
+    click("pinterest-pin-button.png")
     sleep(1)
 
     # add pict
