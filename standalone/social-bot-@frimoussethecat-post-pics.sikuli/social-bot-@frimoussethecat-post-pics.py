@@ -22,7 +22,6 @@ try:
     runScript("../platform/windows-fullscreen")
     
     # facebook
-    # TODO: runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.facebook.com/")
     runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/facebook-open")
     runScript("../platform/facebook-post", POST_TEXT, POST_IMAGE)
@@ -83,43 +82,19 @@ try:
     
     # browser    
     runScript("../platform/cmd-run", 'firefox')
-    # facebook
-    # TODO: runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.facebook.com/frimoussethecat/")    
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://www.facebook.com/frimoussethecat/")
-    # instagram
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://www.instagram.com/frimousse_the_cat/")
-    # twitter
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://x.com/frimoussethecat/")
-    # pinterest
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://fr.pinterest.com/frimoussethecat/_pins/")
-    # imgur
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://imgur.com/user/frimoussethecat/")
-    # tumblr
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://www.tumblr.com/frimoussethecat")
-    # threads
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://www.threads.net/@frimousse_the_cat")
-    # flickr
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://www.flickr.com/photos/frimoussethecat/")
-    # mastodon
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://mastodon.social/@frimoussethecat")
-    # cara
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://cara.app/frimoussethecat")
-    # linkedin
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://www.linkedin.com/in/frimoussethecat/")
-    # bluesky
-    runScript("../platform/firefox-container-new", FF_CONT)
-    runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
+    # sites
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.facebook.com/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.instagram.com/frimousse_the_cat/")
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://x.com/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://fr.pinterest.com/frimoussethecat/_pins/")
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://imgur.com/user/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.tumblr.com/frimoussethecat")
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.threads.net/@frimousse_the_cat")
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.flickr.com/photos/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://mastodon.social/@frimoussethecat")
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://cara.app/frimoussethecat")
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.linkedin.com/in/frimoussethecat/")
+    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://bsky.app/profile/frimoussethecat.bsky.social")
     
     # END ***********************************************
 finally:
