@@ -1,4 +1,4 @@
-ARG_URL = "https://www.pinterest.com/frimoussethecat/_created/"
+ARG_URL = "https://www.pinterest.com/"
 
 # focus navbar
 type("l", KeyModifier.CTRL)
