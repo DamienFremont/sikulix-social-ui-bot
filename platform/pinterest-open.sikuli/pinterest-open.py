@@ -9,6 +9,9 @@ paste(ARG_URL)
 type(Key.ENTER)
 sleep(2)
 
+# check loaded
+wait("pinterest-create-button-1.png", 10)
+
 # unfocus navbar
 type(Key.ESC)
 sleep(1)
