@@ -1,18 +1,18 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_ID    = "20230101_012935"
-ARG_TEXT  = "Meow in Nantes, FRANCE. #pet #cat #france #frimoussethecat"
-ARG_TITLE = "Meow in Nantes, FRANCE."
-ARG_DESCR = "Check me at https://linktr.ee/frimoussethecat #pet #cat #france #frimoussethecat"
+ARG_ID    = "20230114_000619"
+ARG_TEXT  = " - Meow in Nantes, FRANCE. #pet #cat #france #frimoussethecat"
+ARG_TITLE = " - Meow in Nantes, FRANCE."
+ARG_DESCR = " - Meow in Nantes, FRANCE. Check me at https://linktr.ee/frimoussethecat #pet #cat #france #frimoussethecat"
 ARG_PATH = "file:c:/Users/damien/workspace/project-frimousse-social/"
 FF_CONT = "4"
 
 # VARS
 POST_IMAGE = ARG_PATH + ARG_ID + "-compressed.jpg"
-POST_TEXT =  ARG_ID + " " + ARG_TEXT
-POST_TITLE = ARG_ID + " " + ARG_TITLE
-POST_DESCR = ARG_ID + " " + ARG_DESCR
+POST_TEXT =  ARG_ID + ARG_TEXT
+POST_TITLE = ARG_ID + ARG_TITLE
+POST_DESCR = ARG_ID + ARG_DESCR
 
 try:
     # START ***********************************************
@@ -54,9 +54,8 @@ try:
     # flickr
     runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/flickr-open")
-    runScript("../platform/flickr-post", POST_TEXT, POST_IMAGE)
-    # TODO: runScript("../platform/flickr-post", POST_TITLE, POST_IMAGE, POST_DESCR)
-        
+    runScript("../platform/flickr-post", POST_TITLE, POST_IMAGE, POST_DESCR)
+    
     # mastodon
     runScript("../platform/firefox-container-new", FF_CONT)
     runScript("../platform/mastodon-open")
@@ -83,18 +82,7 @@ try:
     # browser    
     runScript("../platform/cmd-run", 'firefox')
     # sites
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.facebook.com/frimoussethecat/")
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.instagram.com/frimousse_the_cat/")
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://x.com/frimoussethecat/")
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://fr.pinterest.com/frimoussethecat/_pins/")
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://imgur.com/user/frimoussethecat/")
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.tumblr.com/frimoussethecat")
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.threads.net/@frimousse_the_cat")
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.flickr.com/photos/frimoussethecat/")
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://mastodon.social/@frimoussethecat")
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://cara.app/frimoussethecat")
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.linkedin.com/in/frimoussethecat/")
-    runScript("../platform/firefox-cont-new-url", FF_CONT, "https://bsky.app/profile/frimoussethecat.bsky.social")
+
     
     # END ***********************************************
 finally:
