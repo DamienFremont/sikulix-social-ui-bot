@@ -1,18 +1,18 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_ID    = "20201119_220800"
-ARG_TEXT  = "Meow in Montreal, CANADA. #pet #cat #canada #frimoussethecat"
-ARG_TITLE = "Meow in Montreal, CANADA."
-ARG_DESCR = "Check me at https://linktr.ee/frimoussethecat #pet #cat #canada #frimoussethecat"
-ARG_PATH = "file:c:/Users/damien/workspace/project-frimousse-social/_ARCHIVE/2020/"
+ARG_ID    = "20210123_000517"
+ARG_TEXT  = " - Meow in Montreal, CANADA. #pet #cat #canada #frimoussethecat"
+ARG_TITLE = " - Meow in Montreal, CANADA."
+ARG_DESCR = " - Check me at https://linktr.ee/frimoussethecat #pet #cat #canada #frimoussethecat"
+ARG_PATH = "file:c:/Users/damien/workspace/project-frimousse-social/_ARCHIVE/2021/"
 FF_CONT = "4"
 
 # VARS
 POST_IMAGE = ARG_PATH + ARG_ID + "-compressed.jpg"
-POST_TEXT =  ARG_ID + " " + ARG_TEXT
-POST_TITLE = ARG_ID + " " + ARG_TITLE
-POST_DESCR = ARG_ID + " " + ARG_DESCR
+POST_TEXT =  ARG_ID + ARG_TEXT
+POST_TITLE = ARG_ID + ARG_TITLE
+POST_DESCR = ARG_ID + ARG_DESCR
 
 try:
     # START ***********************************************
