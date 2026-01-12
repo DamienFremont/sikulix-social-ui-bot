@@ -1,5 +1,5 @@
 type("l", KeyModifier.CTRL)
 
-# start twitter
+# copy URL
 paste("https://imgur.com/")
 type(Key.ENTER)
