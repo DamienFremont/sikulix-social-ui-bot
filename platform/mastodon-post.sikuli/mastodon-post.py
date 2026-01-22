@@ -11,10 +11,7 @@ if len(sys.argv) > 1:
 try:
     
     # post
-    click("mastodon-post-create.png")
-    
-    # add text
-    paste(ARG_TXT)
+    wait("mastodon-post-create.png")
     
     # upload picture
     click("mastodon-post-upload.png")
@@ -38,6 +35,11 @@ try:
         else:
             break
     
+    # add text
+    click("mastodon-post-create.png")
+    sleep(0.5)
+    paste(ARG_TXT)
+        
     # submit
     click("mastodon-post-submit-2.png")
     
