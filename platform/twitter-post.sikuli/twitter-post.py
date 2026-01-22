@@ -11,12 +11,7 @@ if len(sys.argv) > 1:
 try:
 
     # post
-    click("twitter-post-text-area.png")
-    sleep(1)
-
-    # add text
-    click("twitter-post-text-area.png")
-    paste(ARG_TXT)
+    wait("twitter-post-text-area.png")
     sleep(1)
 
     # add pict
@@ -26,6 +21,12 @@ try:
     # select picture
     runScript("firefox-file-upload-2", ARG_IMG_FN)
     sleep(3)
+
+    # add text
+    click("twitter-post-text-area.png")
+    paste(ARG_TXT)
+    sleep(1)
+    type(Key.ENTER)
 
     # submit
     click("tw-post-submit-btn.png")
