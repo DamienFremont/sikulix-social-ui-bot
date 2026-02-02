@@ -1,11 +1,11 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_IDS = [ "20210802_220702" ]
-ARG_TEXT  = " - Meow in Montreal, CANADA. #pet #cat #canada #frimoussethecat"
-ARG_TITLE = " - Meow in Montreal, CANADA."
-ARG_DESCR = " - Check me at https://linktr.ee/frimoussethecat #pet #cat #canada #frimoussethecat"
-ARG_PATH = "file:c:/Users/damien/workspace/project-frimousse-social/_ARCHIVE/2021/"
+ARG_BATCH_IDS = [ "20211112_075603", "20211116_090001", "20211210_201459" ]
+ARG_BATCH_TEXT  = " - Meow in Montreal, CANADA. #pet #cat #canada #frimoussethecat"
+ARG_BATCH_TITLE = " - Meow in Montreal, CANADA."
+ARG_BATCH_DESCR = " - Check me at https://linktr.ee/frimoussethecat #pet #cat #canada #frimoussethecat"
+ARG_BATCH_PATH = "file:c:/Users/damien/workspace/project-frimousse-social/_ARCHIVE/2021/"
 FF_CONT = "4"
 
 # START ***********************************************
@@ -14,12 +14,13 @@ FF_CONT = "4"
 runScript("../platform/cmd-run", 'firefox')    
 runScript("../platform/windows-fullscreen")
         
-for ARG_ID in ARG_IDS:    
+for POST_ID in ARG_BATCH_IDS:    
     # VARS
-    POST_IMAGE = ARG_PATH + ARG_ID + "-compressed.jpg"
-    POST_TEXT =  ARG_ID + ARG_TEXT
-    POST_TITLE = ARG_ID + ARG_TITLE
-    POST_DESCR = ARG_ID + ARG_DESCR
+    POST_IMAGE = ARG_BATCH_PATH + POST_ID + "-compressed.jpg"
+    POST_TEXT =  POST_ID + ARG_BATCH_TEXT
+    POST_TITLE = POST_ID + ARG_BATCH_TITLE
+    POST_DESCR = POST_ID + ARG_BATCH_DESCR
+    
     try:
         # sites
         
