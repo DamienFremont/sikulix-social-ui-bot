@@ -23,6 +23,16 @@ try:
     runScript("firefox-file-upload-2", ARG_IMAGE)
     sleep(3)
 
+    # upload error
+    if exists("imgur-post-pic-create-upload-error.png"):
+        # add pict
+        click("imgur-post-pic-create-upload.png")
+        sleep(1)
+        
+        # select picture
+        runScript("firefox-file-upload-2", ARG_IMAGE)
+        sleep(3) 
+    
     # add title
     click("imgur-post-pic-title.png")
     paste(ARG_TITLE)
@@ -40,5 +50,5 @@ try:
     click("imgur-post-pic-confirm.png")
     
 finally:
-    runScript("../platform/windows-takescreenshot", "-twitter") 
+    runScript("../platform/windows-takescreenshot", "-imgur") 
     keyUp()
