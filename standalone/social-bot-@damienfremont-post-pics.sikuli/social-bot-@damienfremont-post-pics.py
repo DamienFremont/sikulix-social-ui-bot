@@ -21,9 +21,9 @@ try:
     runScript("../platform/windows-fullscreen")
     
     # facebook
-    #runScript("../platform/firefox-container-new", FF_CONT)
-    #runScript("../platform/facebook-open")
-    #runScript("../platform/facebook-post", POST_TEXT, POST_IMAGE)
+    runScript("../platform/firefox-container-new", FF_CONT)
+    runScript("../platform/facebook-open")
+    runScript("../platform/facebook-post", POST_TEXT, POST_IMAGE)
     
     # instagram
     #runScript("../platform/firefox-container-new", FF_CONT)
