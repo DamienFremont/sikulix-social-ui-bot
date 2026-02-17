@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_IMAGE = "20260206_152100-gb.512.gif"
+ARG_IMAGE = "20260206_152100-gb.512.png"
 ARG_TITLE = "Testing stuff..."
 ARG_DESCR = " #gamedev #retro #demake"
 ARG_PATH = "file:c:/Users/damien/workspace/project-demake/_MARKETING/"
@@ -26,9 +26,9 @@ try:
     runScript("../platform/facebook-post", POST_TEXT, POST_IMAGE)
     
     # instagram
-    #runScript("../platform/firefox-container-new", FF_CONT)
-    #runScript("../platform/instagram-open")
-    #runScript("../platform/instagram-post", POST_TEXT, POST_IMAGE)
+    runScript("../platform/firefox-container-new", FF_CONT)
+    runScript("../platform/instagram-open")
+    runScript("../platform/instagram-post", POST_TEXT, POST_IMAGE)
     
     # twitter
     runScript("../platform/firefox-container-new", FF_CONT)
