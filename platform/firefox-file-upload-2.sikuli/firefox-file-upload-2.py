@@ -14,6 +14,11 @@ sleep(1)
 type("n", KeyModifier.ALT)
 sleep(0.5)
 
+# overide cached text
+type("a", KeyModifier.CTRL)
+sleep(0.5)
+
+# type file name
 paste(ARG_FN)
 sleep(0.5)
 
