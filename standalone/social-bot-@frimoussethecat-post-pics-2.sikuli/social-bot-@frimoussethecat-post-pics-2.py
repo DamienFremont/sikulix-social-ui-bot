@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_BATCH_IDS = [ "20220124_143123", "20220212_005832", "20220215_200408" ]
+ARG_BATCH_IDS = [ "20220420_090445", "20220421_181004", "20220423_004848" ]
 ARG_BATCH_TEXT  = " - Meow in Montreal, CANADA. #pet #cat #canada #frimoussethecat"
 ARG_BATCH_TITLE = " - Meow in Montreal, CANADA."
 ARG_BATCH_DESCR = " - Check me at https://linktr.ee/frimoussethecat #pet #cat #canada #frimoussethecat"
