@@ -12,6 +12,8 @@ try:
     
     # post
     wait("mastodon-post-create.png")
+
+    sleep(1)
     
     # upload picture
     click("mastodon-post-upload.png")
