@@ -30,9 +30,9 @@ for POST_ID in ARG_BATCH_IDS:
         runScript("../platform/pinterest-post-pic", POST_TITLE, POST_IMAGE, POST_DESCR)
     
         # imgur
-        runScript("../platform/firefox-container-new", FF_CONT)
-        runScript("../platform/imgur-open")
-        runScript("../platform/imgur-post-pic", POST_TITLE, POST_IMAGE, POST_DESCR)
+        #runScript("../platform/firefox-container-new", FF_CONT)
+        #runScript("../platform/imgur-open")
+        #runScript("../platform/imgur-post-pic", POST_TITLE, POST_IMAGE, POST_DESCR)
     
         # bluesky
         runScript("../platform/firefox-container-new", FF_CONT)
