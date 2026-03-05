@@ -80,7 +80,7 @@ try:
     # CHECK ***********************************************
     
     # browser    
-    runScript("../platform/cmd-run", 'firefox')
+    # runScript("../platform/cmd-run", 'firefox')
     # sites
 
     
