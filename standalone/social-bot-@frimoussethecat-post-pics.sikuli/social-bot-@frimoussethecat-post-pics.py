@@ -19,7 +19,7 @@ try:
     
     # browser
     runScript("../platform/cmd-run", 'firefox')    
-    runScript("../platform/windows-fullscreen")
+    #runScript("../platform/windows-fullscreen")
     
     # facebook
     runScript("../platform/firefox-container-new", FF_CONT)
