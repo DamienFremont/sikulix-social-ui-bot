@@ -26,7 +26,6 @@ try:
     type(Key.TAB)
     type(Key.TAB)
     sleep(1)
-#    click("tumblr-post-test-field.png")
     paste(ARG_TXT)
     sleep(1)
     type(Key.ENTER)
