@@ -8,19 +8,19 @@ if len(sys.argv) > 1:
 
 # wait popup
 wait("firefox-file-upload-popup.png")
-sleep(1)
+sleep(0.5)
 
 # focus filename
 type("n", KeyModifier.ALT)
-sleep(0.5)
+#sleep(0.5)
 
 # overide cached text
 type("a", KeyModifier.CTRL)
-sleep(0.5)
+#sleep(0.5)
 
 # type file name
 paste(ARG_FN)
-sleep(0.5)
+#sleep(0.5)
 
 # ok
 type(Key.ENTER)
