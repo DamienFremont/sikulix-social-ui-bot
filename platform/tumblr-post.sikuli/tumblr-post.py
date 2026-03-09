@@ -10,7 +10,9 @@ if len(sys.argv) > 1:
 
 try:
     
-    # page loaded    
+    runScript("../platform/windows-fullscreen")    
+    
+# page loaded    
     wait("tumblr-post-image-1.png", 30)
 
     # post
@@ -52,5 +54,6 @@ try:
     sleep(1)
         
 finally:
+    runScript("../platform/windows-fullscreen")    
     runScript("../platform/windows-takescreenshot", "-tumblr")
     keyUp()
