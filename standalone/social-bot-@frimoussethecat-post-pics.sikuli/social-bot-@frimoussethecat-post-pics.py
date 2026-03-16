@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_ID    = "20230416_002621"
+ARG_ID    = "20230518_192045-2"
 ARG_TEXT  = " - Meow in Nantes, FRANCE. #pet #cat #france #frimoussethecat"
 ARG_TITLE = " - Meow in Nantes, FRANCE."
 ARG_DESCR = " - Meow in Nantes, FRANCE. Check me at https://linktr.ee/frimoussethecat #pet #cat #france #frimoussethecat"
@@ -19,7 +19,6 @@ try:
     
     # browser
     runScript("../platform/cmd-run", 'firefox')    
-    #runScript("../platform/windows-fullscreen")
     
     # facebook
     runScript("../platform/firefox-container-new", FF_CONT)
@@ -76,18 +75,27 @@ try:
     # bluesky
     #runScript("../platform/firefox-container-new", FF_CONT)
     #runScript("../platform/firefox-url-goto", "https://bsky.app/profile/frimoussethecat.bsky.social")
-
-    # CHECK ***********************************************
-    
-    # browser    
-    # runScript("../platform/cmd-run", 'firefox')
-    # sites
-
     
     # END ***********************************************
+    
 finally:
     runScript("../platform/windows-takescreenshot", "-frimoussethecat")
     keyUp()
 
-# browser
-#runScript("../platform/window-close.sikuli")
+# CHECK ***********************************************
+
+# browser    
+runScript("../platform/cmd-run", 'firefox')
+
+# sites
+runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.facebook.com/frimoussethecat/")
+runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.instagram.com/frimousse_the_cat/")
+runScript("../platform/firefox-cont-new-url", FF_CONT, "https://x.com/frimoussethecat")
+#runScript("../platform/firefox-cont-new-url", FF_CONT, "https://fr.pinterest.com/frimoussethecat/_pins/")
+#runScript("../platform/firefox-cont-new-url", FF_CONT, "https://imgur.com/user/frimoussethecat/")
+runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.tumblr.com/blog/frimoussethecat")
+runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.flickr.com/photos/frimoussethecat/")
+runScript("../platform/firefox-cont-new-url", FF_CONT, "https://mastodon.social/@frimoussethecat")
+runScript("../platform/firefox-cont-new-url", FF_CONT, "https://cara.app/home")
+runScript("../platform/firefox-cont-new-url", FF_CONT, "https://www.threads.com/@frimousse_the_cat")
+#runScript("../platform/firefox-cont-new-url", FF_CONT, "https://bsky.app/profile/frimoussethecat.bsky.social")
