@@ -1,7 +1,7 @@
 import sys.argv
 
-ARG_TXT = "20220730_220243 #pet #cat #tabbycat #france @frimoussethecat (o.o)"
-ARG_IMG_FN = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/20220730_220243-compressed.jpg"
+ARG_TXT = "20230611_222051 #pet #cat #tabbycat #france @frimoussethecat (o.o)"
+ARG_IMG_FN = "file:c:/Users/damien/SynologyDrive/workdir/project-frimousse-social/20230611_222051-compressed.jpg"
 
 # parameters
 if len(sys.argv) > 1:
@@ -15,7 +15,7 @@ try:
     
     # post
 
-    #mouseMove("insta-menu-2.png") // FIXME
+    mouseMove("insta-menu-2.png")
     
     click("insta-post-create-btn.png")
     sleep(1)
