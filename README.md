@@ -18,12 +18,6 @@
 
 ---------------------------------------
 
-## Dependencies
-
-- Java 8+
-- FireFox + Container
-- [SikuliX IDE v2.0.5](http://sikulix.com/)
-
 ## Screenshots
 
 ![alt text](./docs/README/screenshot.gif)
@@ -72,6 +66,13 @@ Repository layout:
 └── tools
     └── ci
 ```
+
+## Requirements
+
+- [SikuliX IDE v2.0.5](http://sikulix.com/)
+- Java 8+
+- FireFox (+ Container)
+- Windows 10-11 (+ Theme: Dark Mode + Language: English)
 
 ## Install
 
