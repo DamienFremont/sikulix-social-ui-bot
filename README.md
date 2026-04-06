@@ -24,15 +24,10 @@
 
 ![alt text](./docs/README/diagram/Diapositive1.PNG)
 
-![alt text](./docs/README/diagram/Diapositive2.PNG)
-
-![alt text](./docs/README/diagram/Diapositive3.PNG)
-
 ![alt text](./docs/README/diagram/Diapositive4.PNG)
 
 ![alt text](./docs/README/screenshot-1.png)
 
-![alt text](./docs/README/screenshot-2.png)
 
 ## Features
 
