@@ -6,7 +6,7 @@ ARG_URL = "https://www.google.com/"
 if len(sys.argv) > 1:
     ARG_URL = sys.argv[1]
     
-# CONTAINER ***********************************************
+# TAB ***********************************************
     
 # start tab
 type("t", KeyModifier.CTRL)
