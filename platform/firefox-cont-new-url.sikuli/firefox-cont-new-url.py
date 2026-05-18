@@ -22,7 +22,6 @@ sleep(0.5)
 # copy URL
 paste(ARG_URL)
 type(Key.ENTER)
-sleep(0.5)
 
 # unfocus navbar
 #type(Key.ESC)
