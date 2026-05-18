@@ -29,10 +29,10 @@ try:
     runScript("../platform/firefox-cont-new-url", ARG_FFC_ID, "https://vimeo.com/frimoussethecat")
 
     # @Account1
-    runScript("../platform/firefox-cont-new-url", "1", "https://www.facebook.com/frimoussethecat/")
-    runScript("../platform/firefox-cont-new-url", "1", "https://www.youtube.com/@FrimousseTheCat")
-    runScript("../platform/firefox-cont-new-url", "1", "https://mastodon.social/@frimoussethecat")
-    runScript("../platform/firefox-cont-new-url", "1", "https://cara.app/frimoussethecat")
+    runScript("../platform/firefox-tab-new-url", "https://www.facebook.com/frimoussethecat/")
+    runScript("../platform/firefox-tab-new-url", "https://www.youtube.com/@FrimousseTheCat")
+    runScript("../platform/firefox-tab-new-url", "https://mastodon.social/@frimoussethecat")
+    runScript("../platform/firefox-tab-new-url", "https://cara.app/frimoussethecat")
 
     # @Account2
     runScript("../platform/firefox-cont-new-url", ARG_FFC_ID_2, "https://www.facebook.com/frimoussethecat/")
