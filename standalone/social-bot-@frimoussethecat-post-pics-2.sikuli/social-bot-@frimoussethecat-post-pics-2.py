@@ -1,7 +1,7 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_BATCH_IDS = [ "20220510_112751", "20220517-anniv", "20220518_121347" ]
+ARG_BATCH_IDS = [ "20220815_163238", "20220820_185514", "20220825_010931" ]
 ARG_BATCH_TEXT  = " - Meow in Montreal, CANADA. #pet #cat #canada #frimoussethecat"
 ARG_BATCH_TITLE = " - Meow in Montreal, CANADA."
 ARG_BATCH_DESCR = " - Check me at https://linktr.ee/frimoussethecat #pet #cat #canada #frimoussethecat"
@@ -12,8 +12,8 @@ FF_CONT = "4"
 
 # browser
 runScript("../platform/cmd-run", 'firefox')    
-#runScript("../platform/windows-fullscreen")
-        
+runScript("../platform/windows-maximize")
+
 for POST_ID in ARG_BATCH_IDS:    
     # VARS
     POST_IMAGE = ARG_BATCH_PATH + POST_ID + "-compressed.jpg"

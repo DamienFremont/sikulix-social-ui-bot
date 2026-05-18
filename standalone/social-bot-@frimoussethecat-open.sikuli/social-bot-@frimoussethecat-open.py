@@ -10,6 +10,7 @@ try:
     
     # browser
     runScript("../platform/cmd-run", 'firefox')
+    runScript("../platform/windows-maximize")
     
     # main Account
     runScript("../platform/firefox-cont-new-url", CONT_FRIMOUSSE, "https://www.facebook.com/frimoussethecat/")
