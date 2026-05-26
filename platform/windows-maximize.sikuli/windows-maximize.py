@@ -1,4 +1,7 @@
 
+# wait for app to launch (just in case)
+sleep(1)
+
 # open control menu
 type(Key.SPACE, Key.ALT)
 #type(KeyModifier.ALT, Key.SPACE)
