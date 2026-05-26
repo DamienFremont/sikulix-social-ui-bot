@@ -1,3 +1,5 @@
+# TODO: DELETE ME
+
 import sys.argv
 
 arg1 = "firefox"
