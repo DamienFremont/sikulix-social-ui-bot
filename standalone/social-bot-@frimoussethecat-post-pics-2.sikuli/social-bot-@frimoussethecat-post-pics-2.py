@@ -1,17 +1,17 @@
 # NOTE: Press Alt+Shift+C to to kill a running Sikuli script.
 
 # CONST
-ARG_BATCH_IDS = [ "20220815_163238", "20220820_185514", "20220825_010931" ]
-ARG_BATCH_TEXT  = " - Meow in Montreal, CANADA. #pet #cat #canada #frimoussethecat"
-ARG_BATCH_TITLE = " - Meow in Montreal, CANADA."
-ARG_BATCH_DESCR = " - Check me at https://linktr.ee/frimoussethecat #pet #cat #canada #frimoussethecat"
-ARG_BATCH_PATH = "file:c:/Users/damien/workspace/project-frimousse-social/_ARCHIVE/2022/"
+ARG_BATCH_IDS = [ "20230517-cartepostale", "20230518_191917", "20230518_192045-2" ]
+ARG_BATCH_TEXT  = " - Meow in Nantes, FRANCE. #pet #cat #france #frimoussethecat"
+ARG_BATCH_TITLE = " - Meow in Nantes, FRANCE"
+ARG_BATCH_DESCR = " - Check me at https://linktr.ee/frimoussethecat #pet #cat #france #frimoussethecat"
+ARG_BATCH_PATH = "file:c:/Users/damien/workspace/project-frimousse-social/_ARCHIVE/2023/"
 FF_CONT = "4"
 
 # START ***********************************************
 
 # browser
-runScript("../platform/cmd-run", 'firefox')    
+runScript("../platform/cmd-run", 'firefox')
 runScript("../platform/windows-maximize")
 
 for POST_ID in ARG_BATCH_IDS:    
