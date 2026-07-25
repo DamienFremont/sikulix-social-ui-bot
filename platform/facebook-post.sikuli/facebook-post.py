@@ -36,6 +36,7 @@ try:
     sleep(3)    
     click("facebook-post-confirm.png")
     sleep(1)
+    click("facebook-post-next2.png")
         
 finally:
     runScript("../platform/windows-takescreenshot", "-facebook")
