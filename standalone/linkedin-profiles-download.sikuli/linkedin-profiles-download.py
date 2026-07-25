@@ -4,7 +4,7 @@
 PARAM_TARGET_DIR = "C:/Users/damien/Downloads/linkedIn/"
 PARAM_PROFILES_TODO = 20
 PARAM_PROFILES_SKIP = 0
-PARAM_SKIP_NAVTO = True
+PARAM_SKIP_NAVTO = False
 if len(sys.argv) > 2:
     PARAM_TARGET_DIR = sys.argv[1]
     PARAM_PROFILES_TODO = sys.argv[2]
