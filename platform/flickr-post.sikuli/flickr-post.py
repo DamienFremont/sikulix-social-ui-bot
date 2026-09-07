@@ -1,8 +1,8 @@
 import sys.argv
 
-ARG_TITLE = "TEST #pet #cat #tabbycat #france @frimoussethecat (o.o)"
-ARG_IMAGE = "file:c:/Users/damien/workspace/project-frimousse-social/folder.jpg"
-ARG_DESCR = "20110001 #pet #cat #tabbycat #france @frimoussethecat (o.o https://linktr.ee/frimoussethecat)"
+ARG_IMAGE = "file:c:/Users/damien/workspace/project-frimousse-social/20240626_111533-compressed.jpg"
+ARG_TITLE = "20240626_111533 - Meow in Nantes, FRANCE"
+ARG_DESCR = "20240626_111533 - Meow in Nantes, FRANCE. Check me at https://linktr.ee/frimoussethecat #pet #cat #france #frimoussethecat"
 
 # parameters
 if len(sys.argv) > 1:
@@ -13,7 +13,7 @@ if len(sys.argv) > 1:
 try:
 
     # post
-    click("flickr-post-create.png")
+    click("flickr-post-create-2.png")
     sleep(1)
 
     # upload picture
