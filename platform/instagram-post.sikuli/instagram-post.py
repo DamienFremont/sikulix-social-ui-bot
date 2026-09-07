@@ -50,6 +50,7 @@ try:
     # SUCCESS
     wait("insta-post-submit-confirm.png", 30)    
     sleep(1)
+    wait("insta-post-submit-check.png", 30)
 
 finally:
     runScript("../platform/windows-takescreenshot", "-instagram")
